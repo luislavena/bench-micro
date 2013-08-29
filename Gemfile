@@ -8,3 +8,4 @@ gem "puma", "~> 2.5.1"
 # frameworks
 gem "sinatra", "~> 1.4.3"
 gem "cuba", "~> 3.1.0"
+gem "nyny", :github => "alisnic/nyny", :branch => "master"

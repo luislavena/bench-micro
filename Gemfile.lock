@@ -1,3 +1,10 @@
+GIT
+  remote: git://github.com/alisnic/nyny.git
+  revision: a94079454e6d5baa3b54cc5f090ec77bfa06172c
+  branch: master
+  specs:
+    nyny (1.0.1)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -19,5 +26,6 @@ PLATFORMS
 
 DEPENDENCIES
   cuba (~> 3.1.0)
+  nyny!
   puma (~> 2.5.1)
   sinatra (~> 1.4.3)
