@@ -3,7 +3,7 @@ class HelloWorld
     [
       200,
       {"Content-Type" => "text/html"},
-      ["Hello Rack!"]
+      ["Hello World!"]
     ]
   end
 end
