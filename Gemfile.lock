@@ -5,6 +5,14 @@ GIT
   specs:
     nyny (1.0.1)
 
+GIT
+  remote: git://github.com/patriciomacadden/hobbit.git
+  revision: 20a743eba856f424cc4a75dd76e5f10719901354
+  branch: master
+  specs:
+    hobbit (0.1.0)
+      rack
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -26,6 +34,7 @@ PLATFORMS
 
 DEPENDENCIES
   cuba (~> 3.1.0)
+  hobbit!
   nyny!
   puma (~> 2.5.1)
   sinatra (~> 1.4.3)
