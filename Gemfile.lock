@@ -1,13 +1,13 @@
 GIT
   remote: git://github.com/alisnic/nyny.git
-  revision: a94079454e6d5baa3b54cc5f090ec77bfa06172c
+  revision: a65c78931c680420ca8fd5233facf7e3db94eb17
   branch: master
   specs:
     nyny (1.0.1)
 
 GIT
   remote: git://github.com/patriciomacadden/hobbit.git
-  revision: 20a743eba856f424cc4a75dd76e5f10719901354
+  revision: 9aeb76231fe632e2f2bbc25ede0cb72d985336c8
   branch: master
   specs:
     hobbit (0.1.0)
