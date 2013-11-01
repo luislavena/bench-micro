@@ -1,16 +1,17 @@
 GIT
   remote: git://github.com/alisnic/nyny.git
-  revision: a65c78931c680420ca8fd5233facf7e3db94eb17
+  revision: a862e69dca99ddf6e0fd1eea6836a8bdba7196d4
   branch: master
   specs:
-    nyny (1.0.1)
+    nyny (2.1.1)
+      rack
 
 GIT
   remote: git://github.com/patriciomacadden/hobbit.git
-  revision: 9aeb76231fe632e2f2bbc25ede0cb72d985336c8
+  revision: 07c5bc6820b09f75d9257faa7c3b2de28c2e0d08
   branch: master
   specs:
-    hobbit (0.1.0)
+    hobbit (0.2.1)
       rack
 
 GEM
@@ -21,9 +22,9 @@ GEM
     puma (2.6.0)
       rack (>= 1.1, < 2.0)
     rack (1.5.2)
-    rack-protection (1.5.0)
+    rack-protection (1.5.1)
       rack
-    sinatra (1.4.3)
+    sinatra (1.4.4)
       rack (~> 1.4)
       rack-protection (~> 1.4)
       tilt (~> 1.3, >= 1.3.4)
@@ -33,8 +34,8 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  cuba (~> 3.1.0)
+  cuba
   hobbit!
   nyny!
   puma (~> 2.6.0)
-  sinatra (~> 1.4.3)
+  sinatra
