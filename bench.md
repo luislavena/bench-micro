@@ -6,11 +6,11 @@
 Running 10s test @ http://localhost:9292/
   2 threads and 10 connections
   Thread Stats   Avg      Stdev     Max   +/- Stdev
-    Latency    20.78ms    8.01ms  57.97ms   69.82%
-    Req/Sec   245.74     34.01   326.00     62.80%
-  4878 requests in 10.00s, 0.86MB read
-Requests/sec:    487.66
-Transfer/sec:     88.14KB
+    Latency    14.17ms    4.51ms  32.83ms   70.76%
+    Req/Sec   365.74     45.44   461.00     76.48%
+  7221 requests in 10.00s, 1.27MB read
+Requests/sec:    722.34
+Transfer/sec:    130.50KB
 ```
 
 ## puma
@@ -19,11 +19,11 @@ Transfer/sec:     88.14KB
 Running 10s test @ http://localhost:9292/
   2 threads and 10 connections
   Thread Stats   Avg      Stdev     Max   +/- Stdev
-    Latency     1.84ms    2.26ms  17.50ms   91.69%
-    Req/Sec     3.38k     1.24k    5.33k    63.63%
-  63557 requests in 10.00s, 4.61MB read
-Requests/sec:   6355.62
-Transfer/sec:    471.73KB
+    Latency     1.41ms    1.56ms   9.18ms   93.31%
+    Req/Sec     4.09k     1.28k    6.11k    61.97%
+  77326 requests in 10.00s, 5.60MB read
+Requests/sec:   7732.80
+Transfer/sec:    573.92KB
 ```
 
 # sinatra
@@ -34,11 +34,11 @@ Transfer/sec:    471.73KB
 Running 10s test @ http://localhost:9292/
   2 threads and 10 connections
   Thread Stats   Avg      Stdev     Max   +/- Stdev
-    Latency    24.17ms    9.52ms  79.02ms   76.42%
-    Req/Sec   211.62     24.82   268.00     67.69%
-  4192 requests in 10.00s, 1.18MB read
-Requests/sec:    419.17
-Transfer/sec:    120.37KB
+    Latency    16.22ms    5.44ms  37.09ms   72.16%
+    Req/Sec   306.55     34.97   395.00     67.03%
+  6057 requests in 10.00s, 1.70MB read
+Requests/sec:    605.66
+Transfer/sec:    173.89KB
 ```
 
 ## puma
@@ -47,11 +47,12 @@ Transfer/sec:    120.37KB
 Running 10s test @ http://localhost:9292/
   2 threads and 10 connections
   Thread Stats   Avg      Stdev     Max   +/- Stdev
-    Latency     5.76ms    3.78ms  30.83ms   74.97%
-    Req/Sec     0.89k   146.10     1.32k    66.51%
-  17470 requests in 10.00s, 3.08MB read
-Requests/sec:   1746.91
-Transfer/sec:    315.67KB
+    Latency     1.95ms    2.47ms  13.94ms   92.75%
+    Req/Sec     3.43k     1.14k    4.67k    81.63%
+  32484 requests in 10.00s, 5.73MB read
+  Socket errors: connect 0, read 0, write 0, timeout 25
+Requests/sec:   3246.96
+Transfer/sec:    586.64KB
 ```
 
 # cuba
@@ -62,11 +63,11 @@ Transfer/sec:    315.67KB
 Running 10s test @ http://localhost:9292/
   2 threads and 10 connections
   Thread Stats   Avg      Stdev     Max   +/- Stdev
-    Latency    22.70ms    8.04ms  60.12ms   74.27%
-    Req/Sec   222.55     28.48   290.00     70.36%
-  4425 requests in 10.00s, 864.62KB read
-Requests/sec:    442.49
-Transfer/sec:     86.46KB
+    Latency    15.46ms    4.50ms  33.58ms   69.37%
+    Req/Sec   333.08     41.32   428.00     69.82%
+  6604 requests in 10.00s, 1.26MB read
+Requests/sec:    660.30
+Transfer/sec:    128.97KB
 ```
 
 ## puma
@@ -75,11 +76,12 @@ Transfer/sec:     86.46KB
 Running 10s test @ http://localhost:9292/
   2 threads and 10 connections
   Thread Stats   Avg      Stdev     Max   +/- Stdev
-    Latency     2.16ms    2.47ms  12.86ms   91.25%
-    Req/Sec     2.87k     1.10k    4.67k    66.61%
-  54049 requests in 10.00s, 4.69MB read
-Requests/sec:   5404.79
-Transfer/sec:    480.32KB
+    Latency   479.60us    0.91ms   7.43ms   97.89%
+    Req/Sec     7.09k     2.15k    9.56k    67.66%
+  66963 requests in 10.00s, 5.81MB read
+  Socket errors: connect 0, read 0, write 0, timeout 28
+Requests/sec:   6694.21
+Transfer/sec:    594.90KB
 ```
 
 # nyny
@@ -90,11 +92,11 @@ Transfer/sec:    480.32KB
 Running 10s test @ http://localhost:9292/
   2 threads and 10 connections
   Thread Stats   Avg      Stdev     Max   +/- Stdev
-    Latency    23.74ms    9.25ms  74.28ms   74.05%
-    Req/Sec   211.79     26.36   275.00     69.55%
-  4221 requests in 10.00s, 763.09KB read
-Requests/sec:    421.96
-Transfer/sec:     76.28KB
+    Latency    15.00ms    5.13ms  39.29ms   69.46%
+    Req/Sec   336.63     44.49   441.00     67.13%
+  6653 requests in 10.00s, 1.17MB read
+Requests/sec:    665.18
+Transfer/sec:    120.17KB
 ```
 
 ## puma
@@ -103,11 +105,12 @@ Transfer/sec:     76.28KB
 Running 10s test @ http://localhost:9292/
   2 threads and 10 connections
   Thread Stats   Avg      Stdev     Max   +/- Stdev
-    Latency     3.30ms    2.99ms  16.83ms   86.33%
-    Req/Sec     1.77k   693.51     3.17k    59.25%
-  33907 requests in 10.00s, 2.46MB read
-Requests/sec:   3390.67
-Transfer/sec:    251.68KB
+    Latency   558.61us    1.95ms   9.92ms   95.46%
+    Req/Sec     5.79k     1.92k    8.56k    69.28%
+  54663 requests in 10.00s, 3.96MB read
+  Socket errors: connect 0, read 0, write 0, timeout 36
+Requests/sec:   5464.48
+Transfer/sec:    405.57KB
 ```
 
 # hobbit
@@ -118,11 +121,11 @@ Transfer/sec:    251.68KB
 Running 10s test @ http://localhost:9292/
   2 threads and 10 connections
   Thread Stats   Avg      Stdev     Max   +/- Stdev
-    Latency    17.56ms    4.70ms  42.19ms   74.29%
-    Req/Sec   287.24     24.83   367.00     66.07%
-  5703 requests in 10.00s, 1.09MB read
-Requests/sec:    570.22
-Transfer/sec:    111.39KB
+    Latency    15.14ms    4.61ms  34.11ms   69.27%
+    Req/Sec   334.69     45.78   475.00     70.60%
+  6618 requests in 10.00s, 1.26MB read
+Requests/sec:    661.69
+Transfer/sec:    129.24KB
 ```
 
 ## puma
@@ -131,9 +134,10 @@ Transfer/sec:    111.39KB
 Running 10s test @ http://localhost:9292/
   2 threads and 10 connections
   Thread Stats   Avg      Stdev     Max   +/- Stdev
-    Latency     2.41ms    2.37ms  15.11ms   82.80%
-    Req/Sec     2.76k     1.17k    4.44k    65.76%
-  52094 requests in 10.00s, 4.52MB read
-Requests/sec:   5209.22
-Transfer/sec:    462.94KB
+    Latency     1.37ms    1.70ms  10.74ms   94.40%
+    Req/Sec     3.05k     1.72k    6.44k    56.93%
+  57557 requests in 10.00s, 5.00MB read
+  Socket errors: connect 0, read 0, write 0, timeout 12
+Requests/sec:   5755.84
+Transfer/sec:    511.51KB
 ```
