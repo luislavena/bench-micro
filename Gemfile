@@ -8,5 +8,6 @@ gem "puma", "~> 2.6.0"
 # frameworks
 gem "sinatra"
 gem "cuba"
-gem "nyny", :github => "alisnic/nyny", :branch => "master"
-gem "hobbit", :github => "patriciomacadden/hobbit", :branch => "master"
+gem "nyny",     github: "alisnic/nyny",            branch: "master"
+gem "hobbit",   github: "patriciomacadden/hobbit", branch: "master"
+gem "scorched", github: "Wardrop/Scorched"

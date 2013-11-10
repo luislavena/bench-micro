@@ -1,4 +1,13 @@
 GIT
+  remote: git://github.com/Wardrop/Scorched.git
+  revision: a5fbfb9f075f7cffbb025fd20607003a282d3947
+  specs:
+    scorched (0.18)
+      rack (~> 1.4)
+      rack-accept (~> 0.4)
+      tilt (~> 1.4)
+
+GIT
   remote: git://github.com/alisnic/nyny.git
   revision: a862e69dca99ddf6e0fd1eea6836a8bdba7196d4
   branch: master
@@ -21,7 +30,11 @@ GEM
       rack
     puma (2.6.0)
       rack (>= 1.1, < 2.0)
+    puma (2.6.0-java)
+      rack (>= 1.1, < 2.0)
     rack (1.5.2)
+    rack-accept (0.4.5)
+      rack (>= 0.4)
     rack-protection (1.5.1)
       rack
     sinatra (1.4.4)
@@ -38,4 +51,5 @@ DEPENDENCIES
   hobbit!
   nyny!
   puma (~> 2.6.0)
+  scorched!
   sinatra
