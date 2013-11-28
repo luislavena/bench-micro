@@ -59,3 +59,8 @@ Sinatra:  2712 req/sec (0.35x)
 Scorched: 1626 req/sec (0.21x)
 Ramaze:   1090 req/sec (0.14x)
 ```
+
+These numbers were collected on:
+
+- OSX, 10.8.5, MacBook Pro i5 (2.5GHz), 8GB 1600 MHz DDR3.
+- Ruby 2.0.0-p353 (GCC 4.7.3)
