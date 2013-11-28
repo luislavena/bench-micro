@@ -13,3 +13,4 @@ gem "nyny",     git: "https://github.com/alisnic/nyny",            branch: "mast
 gem "ramaze"
 gem "scorched", git: "https://github.com/Wardrop/Scorched",        branch: "master"
 gem "sinatra"
+gem "nancy"
