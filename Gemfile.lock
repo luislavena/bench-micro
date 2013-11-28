@@ -18,7 +18,7 @@ GIT
 
 GIT
   remote: https://github.com/luislavena/brooklyn
-  revision: 32a79997ab71c53517ba729649fabbd46bc0cee0
+  revision: 691c71e3058aaa336e21f84cfcaf581b95375b17
   branch: master
   specs:
     brooklyn (0.0.1)
