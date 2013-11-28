@@ -1,6 +1,7 @@
 GIT
-  remote: git://github.com/Wardrop/Scorched.git
+  remote: https://github.com/Wardrop/Scorched
   revision: a5fbfb9f075f7cffbb025fd20607003a282d3947
+  branch: master
   specs:
     scorched (0.18)
       rack (~> 1.4)
@@ -8,7 +9,7 @@ GIT
       tilt (~> 1.4)
 
 GIT
-  remote: git://github.com/alisnic/nyny.git
+  remote: https://github.com/alisnic/nyny
   revision: a862e69dca99ddf6e0fd1eea6836a8bdba7196d4
   branch: master
   specs:
@@ -16,7 +17,7 @@ GIT
       rack
 
 GIT
-  remote: git://github.com/patriciomacadden/hobbit.git
+  remote: https://github.com/patriciomacadden/hobbit
   revision: 07c5bc6820b09f75d9257faa7c3b2de28c2e0d08
   branch: master
   specs:
