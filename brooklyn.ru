@@ -1,6 +1,6 @@
 require "brooklyn"
 
-class HelloWorld < Brookyn::App
+class HelloWorld < Brooklyn::App
   get "/" do
     "Hello World!"
   end

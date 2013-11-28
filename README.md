@@ -25,6 +25,7 @@ The following microframeworks were considered when doing this research:
 - [Cuba](https://github.com/soveran/cuba) - [cuba.ru](cuba.ru)
 - [Ramaze](https://github.com/Ramaze/ramaze) - [ramaze.ru](ramaze.ru)
 - [Scorched](https://github.com/Wardrop/Scorched) - [scorched.ru](scorched.ru)
+- [Brooklyn](https://github.com/luislavena/brooklyn) - [brooklyn.ru](brooklyn.ru)
 
 ## How?
 
