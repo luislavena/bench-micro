@@ -42,3 +42,18 @@ Ruby 2.0, in production mode and using 16 threads:
 ```console
 $ puma -e production -t 16:16 <framework.ru>
 ```
+
+### Have some numbers around?
+
+Yup, I do:
+
+```
+Rack:     7637 req/sec (1.0x)
+Cuba:     6645 req/sec (0.87x)
+Brooklyn: 5827 req/sec (0.76x)
+Hobbit:   5621 req/sec (0.73x)
+NYNY:     4923 req/sec (0.64x)
+Sinatra:  2712 req/sec (0.35x)
+Scorched: 1626 req/sec (0.21x)
+Ramaze:   1090 req/sec (0.14x)
+```
