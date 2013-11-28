@@ -26,6 +26,7 @@ The following microframeworks were considered when doing this research:
 - [Ramaze](https://github.com/Ramaze/ramaze) - [ramaze.ru](ramaze.ru)
 - [Scorched](https://github.com/Wardrop/Scorched) - [scorched.ru](scorched.ru)
 - [Brooklyn](https://github.com/luislavena/brooklyn) - [brooklyn.ru](brooklyn.ru)
+- [Nancy](https://github.com/heapsource/nancy) - [nancy.ru](nancy.ru)
 
 ## How?
 
@@ -52,6 +53,7 @@ Rack:     7637 req/sec (1.0x)
 Cuba:     6645 req/sec (0.87x)
 Brooklyn: 5827 req/sec (0.76x)
 Hobbit:   5621 req/sec (0.73x)
+Nancy:    5334 req/sec (0.69x)
 NYNY:     4923 req/sec (0.64x)
 Sinatra:  2712 req/sec (0.35x)
 Scorched: 1626 req/sec (0.21x)
