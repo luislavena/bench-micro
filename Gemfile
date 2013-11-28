@@ -6,6 +6,7 @@ ruby "2.0.0"
 gem "puma", "~> 2.6.0"
 
 # frameworks
+gem "brooklyn", git: "https://github.com/luislavena/brooklyn",     branch: "master"
 gem "cuba"
 gem "hobbit",   git: "https://github.com/patriciomacadden/hobbit", branch: "master"
 gem "nyny",     git: "https://github.com/alisnic/nyny",            branch: "master"
