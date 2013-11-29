@@ -12,5 +12,6 @@ gem "hobbit",   git: "https://github.com/patriciomacadden/hobbit", branch: "mast
 gem "nancy"
 gem "nyny",     git: "https://github.com/alisnic/nyny",            branch: "master"
 gem "ramaze"
+gem "rambutan"
 gem "scorched", git: "https://github.com/Wardrop/Scorched",        branch: "master"
 gem "sinatra"
