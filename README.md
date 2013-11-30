@@ -28,6 +28,12 @@ The following microframeworks were considered when doing this research:
 - [Scorched](https://github.com/Wardrop/Scorched) - [scorched.ru](scorched.ru)
 - [Brooklyn](https://github.com/luislavena/brooklyn) - [brooklyn.ru](brooklyn.ru)
 - [Nancy](https://github.com/heapsource/nancy) - [nancy.ru](nancy.ru)
+- [Rails](https://github.com/rails/rails) - [rails.ru](rails.ru)
+
+Please note that while Rails has been added to the list, it is just a
+minimalistic representation (using Metal, no full middleware stack, etc). You
+shouldn't take the performance numbers mentioned here about Rails (or any
+other) as scientific and decision-taking references.
 
 ## How?
 
@@ -59,6 +65,7 @@ Nancy:    5334 req/sec (0.69x)
 NYNY:     4923 req/sec (0.64x)
 Sinatra:  2712 req/sec (0.35x)
 Scorched: 1626 req/sec (0.21x)
+Rails:    1284 req/sec (0.17x)
 Ramaze:   1090 req/sec (0.14x)
 ```
 
