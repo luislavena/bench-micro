@@ -58,6 +58,7 @@ Yup, I do:
 ```
 Rack:     7637 req/sec (1.0x)
 Cuba:     6645 req/sec (0.87x)
+Rack:     6010 req/sec (0.78x) (using Rack::Response)
 Brooklyn: 5827 req/sec (0.76x)
 Hobbit:   5621 req/sec (0.73x)
 Rambutan: 5412 req/sec (0.71x)
