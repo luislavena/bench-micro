@@ -10,11 +10,12 @@ GIT
 
 GIT
   remote: https://github.com/alisnic/nyny
-  revision: a862e69dca99ddf6e0fd1eea6836a8bdba7196d4
+  revision: c24e2dcb07e293d0e44136bb6ae49c05287fec72
   branch: master
   specs:
-    nyny (2.1.1)
+    nyny (2.2.1)
       rack
+      tilt
 
 GIT
   remote: https://github.com/luislavena/brooklyn
@@ -26,10 +27,10 @@ GIT
 
 GIT
   remote: https://github.com/patriciomacadden/hobbit
-  revision: 07c5bc6820b09f75d9257faa7c3b2de28c2e0d08
+  revision: e647e843a29358c93b6884ba46eabf99bfbc611c
   branch: master
   specs:
-    hobbit (0.2.1)
+    hobbit (0.4.2)
       rack
 
 GEM
@@ -63,7 +64,7 @@ GEM
     nancy (0.3.0)
       rack
       tilt
-    puma (2.6.0)
+    puma (2.7.1)
       rack (>= 1.1, < 2.0)
     rack (1.5.2)
     rack-accept (0.4.5)
@@ -105,7 +106,7 @@ DEPENDENCIES
   hobbit!
   nancy
   nyny!
-  puma (~> 2.6.0)
+  puma (~> 2.7.1)
   railties (~> 4.0)
   ramaze
   rambutan
