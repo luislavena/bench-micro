@@ -56,18 +56,18 @@ $ puma -e production -t 16:16 <framework.ru>
 Yup, I do:
 
 ```
-Rack:     7637 req/sec (1.0x)
-Cuba:     6645 req/sec (0.87x)
-Rack:     6010 req/sec (0.78x) (using Rack::Response)
-Brooklyn: 5827 req/sec (0.76x)
-Hobbit:   5621 req/sec (0.73x)
-Rambutan: 5412 req/sec (0.71x)
-Nancy:    5334 req/sec (0.69x)
-NYNY:     4923 req/sec (0.64x)
-Sinatra:  2712 req/sec (0.35x)
-Scorched: 1626 req/sec (0.21x)
-Rails:    1284 req/sec (0.17x)
-Ramaze:   1090 req/sec (0.14x)
+Rack:     8777 req/sec (1.0x)
+Cuba:     7559 req/sec (0.86x)
+Hobbit:   7318 req/sec (0.83x)
+Rack:     6783 req/sec (0.77x) (using Rack::Response)
+Brooklyn: 6477 req/sec (0.74x)
+Rambutan: 6025 req/sec (0.67x)
+Nancy:    5775 req/sec (0.66x)
+NYNY:     5206 req/sec (0.59x)
+Sinatra:  2900 req/sec (0.33x)
+Rails:    1619 req/sec (0.18x)
+Scorched: 1581 req/sec (0.18x)
+Ramaze:   1319 req/sec (0.15x)
 ```
 
 These numbers were collected on:
