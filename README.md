@@ -45,7 +45,7 @@ $ wrk -t 2 http://localhost:port/
 ```
 
 All the frameworks were run using [Puma](https://github.com/puma/puma) on
-Ruby 2.0, in production mode and using 16 threads:
+Ruby 2.1, in production mode and using 16 threads:
 
 ```console
 $ puma -e production -t 16:16 <framework.ru>
@@ -73,4 +73,4 @@ Ramaze:   1090 req/sec (0.14x)
 These numbers were collected on:
 
 - OSX, 10.8.5, MacBook Pro i5 (2.5GHz), 8GB 1600 MHz DDR3.
-- Ruby 2.0.0-p353 (GCC 4.7.3)
+- Ruby 2.1.0p0 (GCC 4.7.3)

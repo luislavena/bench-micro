@@ -1,6 +1,6 @@
 source "https://rubygems.org"
 
-ruby "2.0.0"
+ruby "2.1.0"
 
 # webservers
 gem "puma", "~> 2.6.0"
