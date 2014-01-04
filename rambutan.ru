@@ -1,10 +1,4 @@
-require 'rambutan'
-
-class HelloController < Rambutan::Base
-  def world
-    "Hello World!"
-  end
-end
+require File.expand_path('../apps/rambutan', __FILE__)
 
 app = Rambutan::RoutesSet.new do
   get '/' => 'hello#world'

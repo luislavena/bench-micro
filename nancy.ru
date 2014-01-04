@@ -1,9 +1,2 @@
-require "nancy"
-
-class HelloWorld < Nancy::Base
-  get "/" do
-    "Hello World!"
-  end
-end
-
+require File.expand_path('../apps/nancy', __FILE__)
 run HelloWorld

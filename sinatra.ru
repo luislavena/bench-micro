@@ -1,9 +1,2 @@
-require "sinatra/base"
-
-class HelloWorld < Sinatra::Base
-  get "/" do
-    "Hello World!"
-  end
-end
-
+require File.expand_path('../apps/sinatra', __FILE__)
 run HelloWorld

@@ -35,7 +35,7 @@ minimalistic representation (using Metal, no full middleware stack, etc). You
 shouldn't take the performance numbers mentioned here about Rails (or any
 other) as scientific and decision-taking references.
 
-## How?
+## Benchmarking requests/second
 
 Used [wrk](https://github.com/wg/wrk) to benchmark, locally, a burst of
 requests (in 2 threads) over 10 seconds. The command line used was:
@@ -68,6 +68,40 @@ Sinatra:  2900 req/sec (0.33x)
 Rails:    1619 req/sec (0.18x)
 Scorched: 1581 req/sec (0.18x)
 Ramaze:   1319 req/sec (0.15x)
+```
+
+These numbers were collected on:
+
+- OSX, 10.8.5, MacBook Pro i5 (2.5GHz), 8GB 1600 MHz DDR3.
+- Ruby 2.1.0p0 (GCC 4.7.3)
+
+## Benchmarking object allocations
+
+Used [allocation_stats](https://github.com/srawlins/allocation_stats) to
+benchmark, locally, the amount of allocated objects. All the frameworks were
+run on Ruby 2.1. The command line used was:
+
+```console
+$ bundle exec ruby <framework.ru>
+```
+
+### Have some numbers around?
+
+Yup, I do:
+
+```
+Rack:     5   allocations
+Cuba:     21  allocations
+Hobbit:   21  allocations
+Rack:     28  allocations (using Rack::Response)
+Brooklyn: 39  allocations
+Nancy:    47  allocations
+Rambutan: 54  allocations
+NYNY:     58  allocations
+Sinatra:  208 allocations
+Scorched: 260 allocations
+Rails:    292 allocations
+Ramaze:   531 allocations
 ```
 
 These numbers were collected on:

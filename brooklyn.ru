@@ -1,9 +1,2 @@
-require "brooklyn"
-
-class HelloWorld < Brooklyn::App
-  get "/" do
-    "Hello World!"
-  end
-end
-
+require File.expand_path('../apps/brooklyn', __FILE__)
 run HelloWorld.new

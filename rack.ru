@@ -1,11 +1,2 @@
-class HelloWorld
-  def call(env)
-    [
-      200,
-      {"Content-Type" => "text/html"},
-      ["Hello World!"]
-    ]
-  end
-end
-
+require File.expand_path('../apps/rack', __FILE__)
 run HelloWorld.new

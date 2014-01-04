@@ -5,6 +5,9 @@ ruby "2.1.0"
 # webservers
 gem "puma", "~> 2.7.1"
 
+# allocation_stats
+gem 'allocation_stats'
+
 # frameworks
 gem "brooklyn", git: "https://github.com/luislavena/brooklyn",     branch: "master"
 gem "cuba"
