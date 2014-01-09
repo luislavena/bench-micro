@@ -13,6 +13,7 @@ stats = AllocationStats.new(burn: 1).trace do
 end
 
 puts "total allocations: #{stats.allocations.all.size}"
+puts "total memsize: #{stats.allocations.bytes.to_a.inject(&:+)}"
 
 puts 'allocations by source file and class:'
 puts stats.allocations(alias_paths: true).

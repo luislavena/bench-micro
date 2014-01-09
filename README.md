@@ -90,18 +90,18 @@ $ bundle exec ruby <framework.ru>
 Yup, I do:
 
 ```
-Rack:     5   allocations
-Cuba:     21  allocations
-Hobbit:   21  allocations
-Rack:     28  allocations (using Rack::Response)
-Brooklyn: 39  allocations
-Nancy:    47  allocations
-Rambutan: 54  allocations
-NYNY:     58  allocations
-Sinatra:  208 allocations
-Scorched: 260 allocations
-Rails:    292 allocations
-Ramaze:   531 allocations
+Rack:     5   allocations (192   bytes)
+Cuba:     21  allocations (424   bytes)
+Hobbit:   21  allocations (512   bytes)
+Rack:     28  allocations (1560  bytes) (using Rack::Response)
+Brooklyn: 39  allocations (824   bytes)
+Nancy:    47  allocations (1800  bytes)
+Rambutan: 54  allocations (1600  bytes)
+NYNY:     58  allocations (2256  bytes)
+Sinatra:  208 allocations (12455 bytes)
+Scorched: 260 allocations (32401 bytes)
+Rails:    292 allocations (11873 bytes)
+Ramaze:   531 allocations (22343 bytes)
 ```
 
 These numbers were collected on:
