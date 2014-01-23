@@ -18,18 +18,18 @@ nor to do a silly *fibonacci-as-a-service*, ok?
 
 The following microframeworks were considered when doing this research:
 
-- [Rack](https://github.com/rack/rack) - [rack.ru](rack.ru)
-- [Sinatra](https://github.com/sinatra/sinatra) - [sinatra.ru](sinatra.ru)
-- [NYNY](https://github.com/alisnic/nyny) - [nyny.ru](nyny.ru)
-- [Hobbit](https://github.com/patriciomacadden/hobbit) - [hobbit.ru](hobbit.ru)
+- [Brooklyn](https://github.com/luislavena/brooklyn) - [brooklyn.ru](brooklyn.ru)
 - [Cuba](https://github.com/soveran/cuba) - [cuba.ru](cuba.ru)
+- [Hobbit](https://github.com/patriciomacadden/hobbit) - [hobbit.ru](hobbit.ru)
+- [Lotus (Router)](https://github.com/lotus/router) - [lotus-router.ru](lotus-router.ru)
+- [Nancy](https://github.com/heapsource/nancy) - [nancy.ru](nancy.ru)
+- [NYNY](https://github.com/alisnic/nyny) - [nyny.ru](nyny.ru)
+- [Rack](https://github.com/rack/rack) - [rack.ru](rack.ru)
+- [Rails](https://github.com/rails/rails) - [rails.ru](rails.ru)
 - [Ramaze](https://github.com/Ramaze/ramaze) - [ramaze.ru](ramaze.ru)
 - [Rambutan](https://github.com/NewRosies/rambutan) - [rambutan.ru](rambutan.ru)
 - [Scorched](https://github.com/Wardrop/Scorched) - [scorched.ru](scorched.ru)
-- [Brooklyn](https://github.com/luislavena/brooklyn) - [brooklyn.ru](brooklyn.ru)
-- [Nancy](https://github.com/heapsource/nancy) - [nancy.ru](nancy.ru)
-- [Rails](https://github.com/rails/rails) - [rails.ru](rails.ru)
-- [Lotus (Router)](https://github.com/lotus/router) - [lotus-router.ru](lotus-router.ru)
+- [Sinatra](https://github.com/sinatra/sinatra) - [sinatra.ru](sinatra.ru)
 
 Please note that while Rails has been added to the list, it is just a
 minimalistic representation (using Metal, no full middleware stack, etc). You
