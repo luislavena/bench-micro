@@ -18,6 +18,15 @@ GIT
       tilt
 
 GIT
+  remote: https://github.com/lotus/router.git
+  revision: c2512d7fa4f48b106f41219d410107de225a4e68
+  branch: master
+  specs:
+    lotus-router (0.1.0)
+      http_router (~> 0)
+      lotus-utils (~> 0)
+
+GIT
   remote: https://github.com/luislavena/brooklyn
   revision: 691c71e3058aaa336e21f84cfcaf581b95375b17
   branch: master
@@ -59,6 +68,7 @@ GEM
     i18n (0.6.5)
     innate (2013.02.21)
       rack (~> 1.5.2)
+    lotus-utils (0.1.0)
     minitest (4.7.5)
     multi_json (1.8.2)
     nancy (0.3.0)
@@ -104,6 +114,7 @@ DEPENDENCIES
   brooklyn!
   cuba
   hobbit!
+  lotus-router!
   nancy
   nyny!
   puma (~> 2.7.1)

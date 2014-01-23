@@ -58,6 +58,7 @@ Yup, I do:
 ```
 Rack:     8777 req/sec (1.0x)
 Cuba:     7559 req/sec (0.86x)
+Lotus(Router): 7449 req/sec (0.85x)
 Hobbit:   7318 req/sec (0.83x)
 Rack:     6783 req/sec (0.77x) (using Rack::Response)
 Brooklyn: 6477 req/sec (0.74x)
