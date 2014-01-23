@@ -29,6 +29,7 @@ The following microframeworks were considered when doing this research:
 - [Brooklyn](https://github.com/luislavena/brooklyn) - [brooklyn.ru](brooklyn.ru)
 - [Nancy](https://github.com/heapsource/nancy) - [nancy.ru](nancy.ru)
 - [Rails](https://github.com/rails/rails) - [rails.ru](rails.ru)
+- [Lotus (Router)](https://github.com/lotus/router) - [lotus-router.ru](lotus-router.ru)
 
 Please note that while Rails has been added to the list, it is just a
 minimalistic representation (using Metal, no full middleware stack, etc). You
