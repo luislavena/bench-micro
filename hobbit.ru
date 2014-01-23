@@ -1,9 +1,2 @@
-require "hobbit"
-
-class HelloWorld < Hobbit::Base
-  get "/" do
-    "Hello World!"
-  end
-end
-
+require File.expand_path('../apps/hobbit', __FILE__)
 run HelloWorld.new

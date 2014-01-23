@@ -1,11 +1,2 @@
-require "ramaze"
-
-class HelloWorld < Ramaze::Controller
-  map "/"
-
-  def index
-    "Hello World!"
-  end
-end
-
+require File.expand_path('../apps/ramaze', __FILE__)
 run Ramaze.core

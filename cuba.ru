@@ -1,9 +1,2 @@
-require "cuba"
-
-HelloWorld = Cuba.new do
-  on default do
-    res.write "Hello World!"
-  end
-end
-
+require File.expand_path('../apps/cuba', __FILE__)
 run HelloWorld
