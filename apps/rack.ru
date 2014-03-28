@@ -8,4 +8,5 @@ class HelloWorld
   end
 end
 
-run HelloWorld.new
+APP = HelloWorld.new
+run APP

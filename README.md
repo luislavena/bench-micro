@@ -24,6 +24,7 @@ The following microframeworks were considered when doing this research:
 - [Lotus (Router)](https://github.com/lotus/router) - [lotus-router.ru](lotus-router.ru)
 - [Nancy](https://github.com/heapsource/nancy) - [nancy.ru](nancy.ru)
 - [NYNY](https://github.com/alisnic/nyny) - [nyny.ru](nyny.ru)
+- [Mustermann](https://github.com/rkh/mustermann) - [mustermann.ru](mustermann.ru)
 - [Rack](https://github.com/rack/rack) - [rack.ru](rack.ru)
 - [Rails](https://github.com/rails/rails) - [rails.ru](rails.ru)
 - [Ramaze](https://github.com/Ramaze/ramaze) - [ramaze.ru](ramaze.ru)
@@ -42,7 +43,7 @@ Used [wrk](https://github.com/wg/wrk) to benchmark, locally, a burst of
 requests (in 2 threads) over 10 seconds. The command line used was:
 
 ```console
-$ wrk -t 2 http://localhost:port/
+$ wrk -t 2 http://localhost:9292/
 ```
 
 All the frameworks were run using [Puma](https://github.com/puma/puma) on
@@ -51,6 +52,10 @@ Ruby 2.1, in production mode and using 16 threads:
 ```console
 $ puma -e production -t 16:16 <framework.ru>
 ```
+
+## Run benchmark for all frameworks
+    $ sh/summary
+
 
 ### Have some numbers around?
 

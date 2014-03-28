@@ -6,4 +6,5 @@ class HelloWorld < NYNY::App
   end
 end
 
-run HelloWorld.new
+APP = HelloWorld.new
+run APP

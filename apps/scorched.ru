@@ -6,4 +6,5 @@ class HelloWorld < Scorched::Controller
   end
 end
 
-run HelloWorld
+APP = HelloWorld
+run APP

@@ -30,5 +30,5 @@ class HelloController < ActionController::Metal
   end
 end
 
-HelloWorld.initialize!
-run HelloWorld
+APP = HelloWorld.initialize!
+run APP

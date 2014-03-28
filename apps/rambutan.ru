@@ -10,4 +10,5 @@ app = Rambutan::RoutesSet.new do
   get '/' => 'hello#world'
 end
 
-run app.router
+APP = app.router
+run APP

@@ -6,4 +6,5 @@ HelloWorld = Cuba.new do
   end
 end
 
-run HelloWorld
+APP = HelloWorld
+run APP

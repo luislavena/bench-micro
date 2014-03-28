@@ -1,4 +1,12 @@
 GIT
+  remote: git://github.com/rkh/mustermann.git
+  revision: b184b1f86a0085b0ef106a03aa852e91c47c5a5e
+  branch: master
+  specs:
+    mustermann (0.2.0)
+      tool (~> 0.2)
+
+GIT
   remote: https://github.com/Wardrop/Scorched
   revision: a5fbfb9f075f7cffbb025fd20607003a282d3947
   branch: master
@@ -57,10 +65,18 @@ GEM
       multi_json (~> 1.3)
       thread_safe (~> 0.1)
       tzinfo (~> 0.3.37)
+    allocation_stats (0.1.4)
     atomic (1.1.14)
     builder (3.1.4)
+    columnize (0.3.6)
     cuba (3.1.0)
       rack
+    debugger (1.6.6)
+      columnize (>= 0.3.1)
+      debugger-linecache (~> 1.2.0)
+      debugger-ruby_core_source (~> 1.3.2)
+    debugger-linecache (1.2.0)
+    debugger-ruby_core_source (1.3.2)
     erubis (2.7.0)
     http_router (0.11.0)
       rack (>= 1.0.0)
@@ -102,6 +118,7 @@ GEM
     thread_safe (0.1.3)
       atomic
     tilt (1.4.1)
+    tool (0.2.2)
     tzinfo (0.3.38)
     url_mount (0.2.1)
       rack
@@ -111,10 +128,13 @@ PLATFORMS
 
 DEPENDENCIES
   actionpack (~> 4.0)
+  allocation_stats
   brooklyn!
   cuba
+  debugger
   hobbit!
   lotus-router!
+  mustermann!
   nancy
   nyny!
   puma (~> 2.7.1)
