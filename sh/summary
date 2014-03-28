@@ -1,0 +1,2 @@
+ruby sh/run-bench.rb |egrep '\*|Request' > summary.txt
+cat summary.txt

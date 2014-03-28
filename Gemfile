@@ -16,8 +16,12 @@ gem "ramaze"
 gem "rambutan"
 gem "scorched", git: "https://github.com/Wardrop/Scorched",        branch: "master"
 gem "sinatra"
+gem "mustermann", github: "rkh/mustermann", branch: "master"
 
 # rails
 gem "actionpack", "~> 4.0"
 gem "railties",   "~> 4.0"
 gem "tzinfo"
+
+# debugging
+gem 'debugger'
