@@ -77,11 +77,11 @@ end
 
 
 def table_header(a,b,c)
-  "#{a.ljust(20)} #{b.to_s.ljust(10)} #{c.to_s.ljust(10)}"
+  "| #{a.ljust(20)} | #{b.to_s.ljust(10)} | #{c.to_s.ljust(10)} |"
 end
 
 def table_row(a,b,c)
-  "#{a.ljust(20)} #{b.to_s.rjust(10)} #{c.to_s.rjust(10)}"
+  "| #{a.ljust(20)} | #{b.to_s.rjust(10)} | #{c.to_s.rjust(10)} |"
 end
 
 sorted = results.sort_by{|x| x[:total_allocations]}
@@ -95,6 +95,7 @@ end.join("\n")
 
 puts "*"*80
 puts "SUMMARY:"
-puts table_row("Framework", "Tot. alloc.", 'Tot. mem.')
+puts table_header("Framework", "Tot. alloc.", 'Tot. mem.')
+puts table_header(":------------", "-----:", '-----:')
 puts table
 
