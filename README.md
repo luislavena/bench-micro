@@ -24,6 +24,7 @@ The following microframeworks were considered when doing this research:
 - [Lotus (Router)](https://github.com/lotus/router) - [lotus-router.ru](lotus-router.ru)
 - [Nancy](https://github.com/heapsource/nancy) - [nancy.ru](nancy.ru)
 - [NYNY](https://github.com/alisnic/nyny) - [nyny.ru](nyny.ru)
+- [Mustermann](https://github.com/rkh/mustermann) - [mustermann.ru](mustermann.ru)
 - [Rack](https://github.com/rack/rack) - [rack.ru](rack.ru)
 - [Rails](https://github.com/rails/rails) - [rails.ru](rails.ru)
 - [Ramaze](https://github.com/Ramaze/ramaze) - [ramaze.ru](ramaze.ru)
@@ -42,7 +43,7 @@ Used [wrk](https://github.com/wg/wrk) to benchmark, locally, a burst of
 requests (in 2 threads) over 10 seconds. The command line used was:
 
 ```console
-$ wrk -t 2 http://localhost:port/
+$ wrk -t 2 http://localhost:9292/
 ```
 
 All the frameworks were run using [Puma](https://github.com/puma/puma) on
@@ -52,24 +53,29 @@ Ruby 2.1, in production mode and using 16 threads:
 $ puma -e production -t 16:16 <framework.ru>
 ```
 
+## Run benchmark for all frameworks
+    $ sh/summary
+
+
 ### Have some numbers around?
 
 Yup, I do:
 
 ```
-Rack:          8777 req/sec (1.0x)
-Cuba:          7559 req/sec (0.86x)
-Lotus(Router): 7449 req/sec (0.85x)
-Hobbit:        7318 req/sec (0.83x)
-Rack:          6783 req/sec (0.77x) (using Rack::Response)
-Brooklyn:      6477 req/sec (0.74x)
-Rambutan:      6025 req/sec (0.67x)
-Nancy:         5775 req/sec (0.66x)
-NYNY:          5206 req/sec (0.59x)
-Sinatra:       2900 req/sec (0.33x)
-Rails:         1619 req/sec (0.18x)
-Scorched:      1581 req/sec (0.18x)
-Ramaze:        1319 req/sec (0.15x)
+rack:             8789.20 req/sec (1.00x)
+mustermann:       7939.33 req/sec (0.90x)
+cuba:             7646.59 req/sec (0.87x)
+lotus-router:     7498.46 req/sec (0.85x)
+hobbit:           7393.50 req/sec (0.84x)
+rack-response:    6868.09 req/sec (0.78x)
+brooklyn:         6179.54 req/sec (0.70x)
+rambutan:         6121.30 req/sec (0.70x)
+nancy:            5923.70 req/sec (0.67x)
+nyny:             5291.87 req/sec (0.60x)
+sinatra:          2984.99 req/sec (0.34x)
+rails:            1774.22 req/sec (0.20x)
+scorched:         1733.39 req/sec (0.20x)
+ramaze:           1468.58 req/sec (0.17x)
 ```
 
 These numbers were collected on:
