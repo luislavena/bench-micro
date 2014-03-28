@@ -77,11 +77,11 @@ end
 
 
 def table_header(a,b,c)
-  "| #{a.ljust(20)} | #{b.to_s.ljust(10)} | #{c.to_s.ljust(10)} |"
+  "| #{a.ljust(20)} | #{b.to_s.ljust(12)} | #{c.to_s.ljust(12)} |"
 end
 
 def table_row(a,b,c)
-  "| #{a.ljust(20)} | #{b.to_s.rjust(10)} | #{c.to_s.rjust(10)} |"
+  "| #{a.ljust(20)} | #{b.to_s.rjust(12)} | #{c.to_s.rjust(12)} |"
 end
 
 sorted = results.sort_by{|x| x[:total_allocations]}
@@ -90,7 +90,6 @@ table = sorted.map do |res|
   allocations = res[:total_allocations]
   memory      = res[:total_memsize]
   table_row(name, allocations, memory)
-  #"#{name.ljust(20)} #{allocations.to_s.ljust(10)} #{memory.to_s.ljust(10)}"
 end.join("\n")
 
 puts "*"*80
