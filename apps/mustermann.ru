@@ -1,6 +1,6 @@
 require "mustermann/router/rack"
 
-router = Mustermann::Router::Rack.new do
+APP = Mustermann::Router::Rack.new do
   on '/' do |env|
     [200, {'Content-Type' => 'text/plain'}, ['Hello World!']]
   end
@@ -11,5 +11,4 @@ router = Mustermann::Router::Rack.new do
   end
 end
 
- # in a config.ru
- run router
+run APP

@@ -25,3 +25,4 @@ gem "tzinfo"
 
 # debugging
 gem 'debugger'
+gem 'allocation_stats'

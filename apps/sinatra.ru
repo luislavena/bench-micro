@@ -6,4 +6,5 @@ class HelloWorld < Sinatra::Base
   end
 end
 
-run HelloWorld
+APP = HelloWorld
+run APP
