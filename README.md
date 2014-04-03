@@ -54,6 +54,7 @@ $ puma -e production -t 16:16 <framework.ru>
 ```
 
 ## Run benchmark for all frameworks
+    # use `bundle exec`, if needed
     $ sh/summary-memory
     $ sh/summary-speed
 
