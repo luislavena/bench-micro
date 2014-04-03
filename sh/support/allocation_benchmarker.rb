@@ -1,4 +1,3 @@
-#!/usr/bin/env ruby
 require 'bundler'
 Bundler.setup
 # dummy run method
@@ -7,7 +6,7 @@ def run(*args); ; end
 require 'rack/mock'
 require 'allocation_stats'
 
-class AllocationsTracker
+class AllocationsBenchmarker
   attr_accessor :config
   def initialize(config)
     @config = config
@@ -18,6 +17,7 @@ class AllocationsTracker
     puts frameworkname
     puts "total allocations: #{total_allocations}"
     puts "total memsize: #{total_memsize}"
+    detailed_allocations
     puts
   end
 
@@ -64,37 +64,3 @@ class AllocationsTracker
     APP
   end
 end
-
-results = Dir['apps/*.ru'].map do |file|
-  tracker = AllocationsTracker.new(file)
-  tracker.human_output
-  Object.send(:remove_const, :APP)
-  Object.send(:remove_const, :HelloWorld) if Object.constants.include?(:HelloWorld)
-  Object.send(:remove_const, :HelloController) if Object.constants.include?(:HelloController)
-  tracker.machine_result
-end
-
-
-
-def table_header(a,b,c)
-  "| #{a.ljust(20)} | #{b.to_s.ljust(12)} | #{c.to_s.ljust(12)} |"
-end
-
-def table_row(a,b,c)
-  "| #{a.ljust(20)} | #{b.to_s.rjust(12)} | #{c.to_s.rjust(12)} |"
-end
-
-sorted = results.sort_by{|x| x[:total_allocations]}
-table = sorted.map do |res|
-  name        = res[:frameworkname].downcase
-  allocations = res[:total_allocations]
-  memory      = res[:total_memsize]
-  table_row(name, allocations, memory)
-end.join("\n")
-
-puts "*"*80
-puts "SUMMARY:"
-puts table_header("Framework", "Tot. alloc.", 'Tot. mem.')
-puts table_header(":------------", "-----:", '-----:')
-puts table
-

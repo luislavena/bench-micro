@@ -1,5 +1,3 @@
-#!/usr/bin/env ruby
-
 class Benchmarker
   attr_reader :config
 
@@ -77,14 +75,10 @@ class Benchmarker
   # Silences any stream for the duration of the block.
   def silence_stream(stream)
     old_stream = stream.dup
-    stream.reopen(RbConfig::CONFIG['host_os'] =~ /mswin|mingw/ ? 'NUL:' : '/dev/null')
+    stream.reopen('/dev/null')
     stream.sync = true
     yield
   ensure
     stream.reopen(old_stream)
   end
-end
-
-Dir["apps/*.ru"].each do |config_file|
-  Benchmarker.new(config_file).run
 end

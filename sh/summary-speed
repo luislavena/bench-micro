@@ -1,0 +1,32 @@
+#!/usr/bin/env ruby
+require './sh/support/speed_benchmarker'
+require './sh/support/speed_summary_table'
+
+def redirect_stream(stream, path)
+  old_stream = stream.dup
+  stream.reopen(path)
+  stream.sync = true
+  yield
+ensure
+  stream.reopen(old_stream)
+end
+
+
+apps = Dir["apps/*.ru"]
+apps = apps.grep(%r(#{ARGV[0]})) if ARGV[0]
+puts "please wait... the output will come, when finished"
+puts apps
+redirect_stream(STDOUT, 'test.log') do
+  apps.each do |config_file|
+    Benchmarker.new(config_file).run
+  end
+end
+
+content = %x(egrep '\\*|Request' test.log)
+
+summary_table = SpeedSummaryTable.new(content)
+File.open('results/speed.md', 'w') do |f|
+  f.puts summary_table.render_markdown
+end
+puts summary_table.render
+summary_table.replace_readme('speed_table')
