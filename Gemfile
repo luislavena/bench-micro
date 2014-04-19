@@ -24,5 +24,4 @@ gem "railties",   "4.0.1"
 gem "tzinfo"
 
 # debugging
-gem 'debugger'
 gem 'allocation_stats'
