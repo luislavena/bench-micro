@@ -18,18 +18,19 @@ nor to do a silly *fibonacci-as-a-service*, ok?
 
 The following microframeworks were considered when doing this research:
 
-- [Brooklyn](https://github.com/luislavena/brooklyn) - [brooklyn.ru](brooklyn.ru)
-- [Cuba](https://github.com/soveran/cuba) - [cuba.ru](cuba.ru)
-- [Hobbit](https://github.com/patriciomacadden/hobbit) - [hobbit.ru](hobbit.ru)
-- [Lotus (Router)](https://github.com/lotus/router) - [lotus-router.ru](lotus-router.ru)
-- [Nancy](https://github.com/heapsource/nancy) - [nancy.ru](nancy.ru)
-- [NYNY](https://github.com/alisnic/nyny) - [nyny.ru](nyny.ru)
-- [Rack](https://github.com/rack/rack) - [rack.ru](rack.ru)
-- [Rails](https://github.com/rails/rails) - [rails.ru](rails.ru)
-- [Ramaze](https://github.com/Ramaze/ramaze) - [ramaze.ru](ramaze.ru)
-- [Rambutan](https://github.com/NewRosies/rambutan) - [rambutan.ru](rambutan.ru)
-- [Scorched](https://github.com/Wardrop/Scorched) - [scorched.ru](scorched.ru)
-- [Sinatra](https://github.com/sinatra/sinatra) - [sinatra.ru](sinatra.ru)
+- [Brooklyn](https://github.com/luislavena/brooklyn) - [brooklyn.ru](apps/brooklyn.ru)
+- [Cuba](https://github.com/soveran/cuba) - [cuba.ru](apps/cuba.ru)
+- [Hobbit](https://github.com/patriciomacadden/hobbit) - [hobbit.ru](apps/hobbit.ru)
+- [Lotus (Router)](https://github.com/lotus/router) - [lotus-router.ru](apps/lotus-router.ru)
+- [Nancy](https://github.com/heapsource/nancy) - [nancy.ru](apps/nancy.ru)
+- [NYNY](https://github.com/alisnic/nyny) - [nyny.ru](apps/nyny.ru)
+- [Mustermann](https://github.com/rkh/mustermann) - [mustermann.ru](apps/mustermann.ru)
+- [Rack](https://github.com/rack/rack) - [rack.ru](apps/rack.ru) + [rack-response.ru](apps/rack-response.ru)
+- [Rails](https://github.com/rails/rails) - [rails.ru](apps/rails.ru)
+- [Ramaze](https://github.com/Ramaze/ramaze) - [ramaze.ru](apps/ramaze.ru)
+- [Rambutan](https://github.com/NewRosies/rambutan) - [rambutan.ru](apps/rambutan.ru)
+- [Scorched](https://github.com/Wardrop/Scorched) - [scorched.ru](apps/scorched.ru)
+- [Sinatra](https://github.com/sinatra/sinatra) - [sinatra.ru](apps/sinatra.ru)
 
 Please note that while Rails has been added to the list, it is just a
 minimalistic representation (using Metal, no full middleware stack, etc). You
@@ -42,7 +43,7 @@ Used [wrk](https://github.com/wg/wrk) to benchmark, locally, a burst of
 requests (in 2 threads) over 10 seconds. The command line used was:
 
 ```console
-$ wrk -t 2 http://localhost:port/
+$ wrk -t 2 http://localhost:9292/
 ```
 
 All the frameworks were run using [Puma](https://github.com/puma/puma) on
@@ -52,27 +53,62 @@ Ruby 2.1, in production mode and using 16 threads:
 $ puma -e production -t 16:16 <framework.ru>
 ```
 
+## Run benchmark for all frameworks
+    # use `bundle exec`, if needed
+    $ sh/summary-memory
+    $ sh/summary-speed
+
+
 ### Have some numbers around?
 
 Yup, I do:
 
+#### Requests/sec
+<!-- speed_table -->
 ```
-Rack:          8777 req/sec (1.0x)
-Cuba:          7559 req/sec (0.86x)
-Lotus(Router): 7449 req/sec (0.85x)
-Hobbit:        7318 req/sec (0.83x)
-Rack:          6783 req/sec (0.77x) (using Rack::Response)
-Brooklyn:      6477 req/sec (0.74x)
-Rambutan:      6025 req/sec (0.67x)
-Nancy:         5775 req/sec (0.66x)
-NYNY:          5206 req/sec (0.59x)
-Sinatra:       2900 req/sec (0.33x)
-Rails:         1619 req/sec (0.18x)
-Scorched:      1581 req/sec (0.18x)
-Ramaze:        1319 req/sec (0.15x)
+Framework            Requests/sec  % from best
+----------------------------------------------
+rack                      9030.25       100.0%
+mustermann                7872.85       87.18%
+hobbit                    7492.76       82.97%
+cuba                      7477.54       82.81%
+lotus-router              7396.39       81.91%
+rack-response             6990.69       77.41%
+brooklyn                  6491.90       71.89%
+rambutan                  6143.28       68.03%
+nancy                     5915.84       65.51%
+nyny                      4495.02       49.78%
+sinatra                   2972.37       32.92%
+rails                     1784.49       19.76%
+scorched                  1727.95       19.14%
+ramaze                    1463.66       16.21%
 ```
+<!-- speed_table_end -->
+
+#### Memory Allocation/Request
+<!-- mem_table -->
+```
+Framework       Allocs/Req Memsize/Req
+--------------------------------------
+rack                    56        1704
+hobbit                  70        1976
+mustermann              71        2040
+cuba                    72        1936
+rack-response           79        3072
+lotus-router            91        2080
+brooklyn                98        2432
+nancy                  108        3408
+rambutan               116        3448
+nyny                   166        4776
+sinatra                255       10031
+rails                  388       15335
+ramaze                 579       23837
+scorched              1711      115524
+```
+<!-- mem_table_end -->
+
 
 These numbers were collected on:
 
-- OSX, 10.8.5, MacBook Pro i5 (2.5GHz), 8GB 1600 MHz DDR3.
+- OSX, 10.9.1, MacBook Pro i7 (2.7GHz), 16GB 1333 MHz DDR3.
 - Ruby 2.1.0p0 (GCC 4.7.3)

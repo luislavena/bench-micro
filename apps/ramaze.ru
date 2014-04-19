@@ -8,4 +8,6 @@ class HelloWorld < Ramaze::Controller
   end
 end
 
-run Ramaze.core
+
+APP = Ramaze.core
+run APP
