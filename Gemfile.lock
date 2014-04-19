@@ -1,13 +1,5 @@
 GIT
-  remote: git://github.com/rkh/mustermann.git
-  revision: b184b1f86a0085b0ef106a03aa852e91c47c5a5e
-  branch: master
-  specs:
-    mustermann (0.2.0)
-      tool (~> 0.2)
-
-GIT
-  remote: https://github.com/Wardrop/Scorched
+  remote: https://github.com/Wardrop/Scorched.git
   revision: 63ecd6e9740b51619f948ae565243c3bbd12b0f6
   branch: master
   specs:
@@ -17,16 +9,12 @@ GIT
       tilt (~> 1.4)
 
 GIT
-  remote: https://github.com/alisnic/nyny
-  revision: c8ed38da6ed9a63795d4ec2c80636f109310be22
-  ref: release-3.2.1
+  remote: https://github.com/guilleiguaran/nancy.git
+  revision: b3d9e74edee49298a17f360a4567d90c63ad0c55
+  branch: master
   specs:
-    nyny (3.2.1)
-      better_errors (~> 1.1.0)
-      journey (~> 1.0.4)
-      rack (~> 1.5.2)
-      rack-contrib (~> 1.1.0)
-      tilt (~> 1.4.1)
+    nancy (0.4.0)
+      rack
 
 GIT
   remote: https://github.com/lotus/router.git
@@ -38,7 +26,7 @@ GIT
       lotus-utils (~> 0)
 
 GIT
-  remote: https://github.com/luislavena/brooklyn
+  remote: https://github.com/luislavena/brooklyn.git
   revision: 691c71e3058aaa336e21f84cfcaf581b95375b17
   branch: master
   specs:
@@ -46,12 +34,20 @@ GIT
       rack (~> 1.5.2)
 
 GIT
-  remote: https://github.com/patriciomacadden/hobbit
-  revision: 3b8c12fea05c78ec24d340a6b1f396776fb415e0
+  remote: https://github.com/patriciomacadden/hobbit.git
+  revision: 61e1aca871d0c1eb4d4a7d63852e5cb2c18a5680
   branch: master
   specs:
     hobbit (0.5.0)
       rack
+
+GIT
+  remote: https://github.com/rkh/mustermann.git
+  revision: b184b1f86a0085b0ef106a03aa852e91c47c5a5e
+  branch: master
+  specs:
+    mustermann (0.2.0)
+      tool (~> 0.2)
 
 GEM
   remote: https://rubygems.org/
@@ -88,10 +84,13 @@ GEM
     lotus-utils (0.1.0)
     minitest (4.7.5)
     multi_json (1.9.2)
-    nancy (0.3.0)
-      rack
-      tilt
-    puma (2.7.1)
+    nyny (3.2.1)
+      better_errors (~> 1.1.0)
+      journey (~> 1.0.4)
+      rack (~> 1.5.2)
+      rack-contrib (~> 1.1.0)
+      tilt (~> 1.4.1)
+    puma (2.8.2)
       rack (>= 1.1, < 2.0)
     rack (1.5.2)
     rack-accept (0.4.5)
@@ -137,9 +136,9 @@ DEPENDENCIES
   hobbit!
   lotus-router!
   mustermann!
-  nancy
-  nyny!
-  puma (~> 2.7.1)
+  nancy!
+  nyny
+  puma (~> 2.8)
   railties (= 4.0.1)
   ramaze
   rambutan
