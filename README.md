@@ -70,20 +70,19 @@ Yup, I do:
 ```
 Framework            Requests/sec  % from best
 ----------------------------------------------
-rack                      8916.78       100.0%
-mustermann                7812.69       87.62%
-cuba                      7528.52       84.43%
-hobbit                    7487.54       83.97%
-lotus-router              7206.68       80.82%
-rack-response             6877.09       77.13%
-brooklyn                  6453.16       72.37%
-rambutan                  6036.21       67.69%
-nancy                     5731.11       64.27%
-nyny                      4174.86       46.82%
-sinatra                   2836.13       31.81%
-rails                     1655.46       18.57%
-scorched                  1595.42       17.89%
-ramaze                    1354.28       15.19%
+rack                      8808.74       100.0%
+mustermann                7673.94       87.12%
+cuba                      7550.91       85.72%
+hobbit                    7447.90       84.55%
+lotus-router              7346.17        83.4%
+rack-response             6847.69       77.74%
+brooklyn                  6513.61       73.94%
+rambutan                  5991.08       68.01%
+nancy                     5762.34       65.42%
+nyny                      4111.48       46.68%
+sinatra                   2879.52       32.69%
+scorched                  1654.10       18.78%
+ramaze                    1341.83       15.23%
 ```
 <!-- speed_table_end -->
 
@@ -99,13 +98,12 @@ cuba                    72        1936
 rack-response           79        3072
 lotus-router            91        2080
 brooklyn                98        2432
-nancy                  108        3408
-rambutan               116        3448
-nyny                   166        4776
-sinatra                255       10031
-rails                  388       15335
-ramaze                 579       23837
-scorched              1711      115524
+nancy                  107        3440
+rambutan               114        3448
+nyny                   173        5248
+sinatra                253       10011
+ramaze                 575       23797
+scorched              1708      115524
 ```
 <!-- mem_table_end -->
 
