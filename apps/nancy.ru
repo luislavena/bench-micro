@@ -6,5 +6,5 @@ class HelloWorld < Nancy::Base
   end
 end
 
-APP = HelloWorld
+APP = HelloWorld.new
 run APP
