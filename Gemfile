@@ -19,8 +19,8 @@ gem "sinatra"
 gem "mustermann",   git: "https://github.com/rkh/mustermann.git",          branch: "master"
 
 # rails
-gem "actionpack", "4.0.1"
-gem "railties",   "4.0.1"
+gem "actionpack", "~> 4.0.4"
+gem "railties",   "~> 4.0.4"
 gem "tzinfo"
 
 # debugging
