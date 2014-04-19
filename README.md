@@ -55,10 +55,11 @@ $ puma -e production -t 16:16 <framework.ru>
 
 ## Run benchmark for all frameworks
 
-    # use `bundle exec`, if needed
-    $ bench/summary-memory
-    $ bench/summary-speed
-
+```console
+# use `bundle exec`, if needed
+$ bench/summary-memory
+$ bench/summary-speed
+```
 
 ### Have some numbers around?
 
@@ -69,20 +70,20 @@ Yup, I do:
 ```
 Framework            Requests/sec  % from best
 ----------------------------------------------
-rack                      9030.25       100.0%
-mustermann                7872.85       87.18%
-hobbit                    7492.76       82.97%
-cuba                      7477.54       82.81%
-lotus-router              7396.39       81.91%
-rack-response             6990.69       77.41%
-brooklyn                  6491.90       71.89%
-rambutan                  6143.28       68.03%
-nancy                     5915.84       65.51%
-nyny                      4495.02       49.78%
-sinatra                   2972.37       32.92%
-rails                     1784.49       19.76%
-scorched                  1727.95       19.14%
-ramaze                    1463.66       16.21%
+rack                      8916.78       100.0%
+mustermann                7812.69       87.62%
+cuba                      7528.52       84.43%
+hobbit                    7487.54       83.97%
+lotus-router              7206.68       80.82%
+rack-response             6877.09       77.13%
+brooklyn                  6453.16       72.37%
+rambutan                  6036.21       67.69%
+nancy                     5731.11       64.27%
+nyny                      4174.86       46.82%
+sinatra                   2836.13       31.81%
+rails                     1655.46       18.57%
+scorched                  1595.42       17.89%
+ramaze                    1354.28       15.19%
 ```
 <!-- speed_table_end -->
 
@@ -111,5 +112,5 @@ scorched              1711      115524
 
 These numbers were collected on:
 
-- OSX, 10.9.1, MacBook Pro i7 (2.7GHz), 16GB 1333 MHz DDR3.
-- Ruby 2.1.0p0 (GCC 4.7.3)
+- OSX, 10.8.5, MacBook Pro i5 (2.5GHz), 8GB 1600 MHz DDR3.
+- ruby 2.1.1p76 (GCC 4.7.3)
