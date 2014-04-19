@@ -14,10 +14,10 @@ end
 
 apps = Dir["apps/*.ru"]
 apps = apps.grep(%r(#{ARGV[0]})) if ARGV[0]
-puts "please wait... the output will come, when finished"
-puts apps
+warn "please wait... the output will come, when finished"
 redirect_stream(STDOUT, 'test.log') do
   apps.each do |config_file|
+    warn config_file
     Benchmarker.new(config_file).run
   end
 end
