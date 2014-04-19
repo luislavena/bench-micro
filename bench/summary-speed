@@ -1,6 +1,7 @@
 #!/usr/bin/env ruby
-require './sh/support/speed_benchmarker'
-require './sh/support/speed_summary_table'
+
+require File.expand_path("../support/speed_benchmarker", __FILE__)
+require File.expand_path("../support/speed_summary_table", __FILE__)
 
 def redirect_stream(stream, path)
   old_stream = stream.dup
@@ -10,7 +11,6 @@ def redirect_stream(stream, path)
 ensure
   stream.reopen(old_stream)
 end
-
 
 apps = Dir["apps/*.ru"]
 apps = apps.grep(%r(#{ARGV[0]})) if ARGV[0]
