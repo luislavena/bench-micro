@@ -50,7 +50,7 @@ All the frameworks were run using [Puma](https://github.com/puma/puma) on
 Ruby 2.1, in production mode and using 16 threads:
 
 ```console
-$ puma -e production -t 16:16 <framework.ru>
+$ puma -e production -t 16:16 apps/<framework.ru>
 ```
 
 ## Run benchmark for all frameworks
