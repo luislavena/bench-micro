@@ -71,19 +71,20 @@ Yup, I do:
 ```
 Framework            Requests/sec  % from best
 ----------------------------------------------
-rack                      8808.74       100.0%
-mustermann                7673.94       87.12%
-cuba                      7550.91       85.72%
-hobbit                    7447.90       84.55%
-lotus-router              7346.17        83.4%
-rack-response             6847.69       77.74%
-brooklyn                  6513.61       73.94%
-rambutan                  5991.08       68.01%
-nancy                     5762.34       65.42%
-nyny                      4111.48       46.68%
-sinatra                   2879.52       32.69%
-scorched                  1654.10       18.78%
-ramaze                    1341.83       15.23%
+rack                      8809.41       100.0%
+mustermann                7848.87        89.1%
+cuba                      7485.87       84.98%
+hobbit                    7463.71       84.72%
+lotus-router              7321.85       83.11%
+rack-response             6839.61       77.64%
+brooklyn                  6538.46       74.22%
+roda                      6085.84       69.08%
+rambutan                  6009.99       68.22%
+nancy                     5715.72       64.88%
+nyny                      4083.63       46.36%
+sinatra                   2832.67       32.16%
+scorched                  1622.17       18.41%
+ramaze                    1338.17       15.19%
 ```
 <!-- speed_table_end -->
 
