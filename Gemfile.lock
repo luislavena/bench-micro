@@ -26,11 +26,11 @@ GIT
 
 GIT
   remote: https://github.com/lotus/router.git
-  revision: 5ddb5e327c6f7c48e1e57be92da579aa39245ab4
+  revision: 31a5c9cd5d5e37869b5070615de11e9536c0a454
   branch: master
   specs:
-    lotus-router (0.1.0)
-      http_router (~> 0)
+    lotus-router (0.1.1)
+      http_router (~> 0.11)
       lotus-utils (~> 0)
 
 GIT
@@ -43,36 +43,36 @@ GIT
 
 GIT
   remote: https://github.com/patriciomacadden/hobbit.git
-  revision: 61e1aca871d0c1eb4d4a7d63852e5cb2c18a5680
+  revision: 90362913995a9735c6cd4dc15b32b25f8b5656d9
   branch: master
   specs:
-    hobbit (0.5.0)
+    hobbit (0.6.0)
       rack
 
 GIT
   remote: https://github.com/rkh/mustermann.git
-  revision: b184b1f86a0085b0ef106a03aa852e91c47c5a5e
+  revision: c33eaf7a5ca887056b7ffae5392033ebdc10fd27
   branch: master
   specs:
-    mustermann (0.2.0)
+    mustermann (0.3.0)
       tool (~> 0.2)
 
 GEM
   remote: https://rubygems.org/
   specs:
-    actionpack (4.0.4)
-      activesupport (= 4.0.4)
+    actionpack (4.0.8)
+      activesupport (= 4.0.8)
       builder (~> 3.1.0)
       erubis (~> 2.7.0)
       rack (~> 1.5.2)
       rack-test (~> 0.6.2)
-    activesupport (4.0.4)
+    activesupport (4.0.8)
       i18n (~> 0.6, >= 0.6.9)
       minitest (~> 4.2)
       multi_json (~> 1.3)
       thread_safe (~> 0.1)
       tzinfo (~> 0.3.37)
-    allocation_stats (0.1.4)
+    allocation_stats (0.1.5)
     better_errors (1.1.0)
       coderay (>= 1.0.0)
       erubis (>= 2.6.6)
@@ -84,13 +84,13 @@ GEM
     http_router (0.11.1)
       rack (>= 1.0.0)
       url_mount (~> 0.2.1)
-    i18n (0.6.9)
+    i18n (0.6.11)
     innate (2013.02.21)
       rack (~> 1.5.2)
-    lotus-utils (0.1.0)
+    lotus-utils (0.2.0)
     minitest (4.7.5)
-    multi_json (1.9.2)
-    nyny (3.4.0)
+    multi_json (1.10.1)
+    nyny (3.4.1)
       actionpack (~> 4.0.2)
       better_errors (~> 1.1.0)
       rack-contrib (~> 1.1.0)
@@ -106,12 +106,12 @@ GEM
       rack
     rack-test (0.6.2)
       rack (>= 1.0)
-    railties (4.0.4)
-      actionpack (= 4.0.4)
-      activesupport (= 4.0.4)
+    railties (4.0.8)
+      actionpack (= 4.0.8)
+      activesupport (= 4.0.8)
       rake (>= 0.8.7)
       thor (>= 0.18.1, < 2.0)
-    rake (10.3.1)
+    rake (10.3.2)
     ramaze (2012.12.08)
       innate (>= 2012.12)
       rake
@@ -122,10 +122,10 @@ GEM
       rack-protection (~> 1.4)
       tilt (~> 1.3, >= 1.3.4)
     thor (0.19.1)
-    thread_safe (0.3.3)
+    thread_safe (0.3.4)
     tilt (1.4.1)
     tool (0.2.2)
-    tzinfo (0.3.39)
+    tzinfo (0.3.41)
     url_mount (0.2.1)
       rack
 
