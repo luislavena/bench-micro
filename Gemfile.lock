@@ -87,7 +87,7 @@ GEM
       better_errors (~> 1.1.0)
       rack-contrib (~> 1.1.0)
       tilt (~> 1.4.1)
-    puma (2.8.2)
+    puma (2.9.0)
       rack (>= 1.1, < 2.0)
     rack (1.5.2)
     rack-accept (0.4.5)
@@ -134,7 +134,7 @@ DEPENDENCIES
   mustermann!
   nancy!
   nyny
-  puma (~> 2.8)
+  puma (~> 2.9)
   railties (~> 4.0.4)
   ramaze
   rambutan

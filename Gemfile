@@ -3,7 +3,7 @@ source "https://rubygems.org"
 ruby "2.1.2"
 
 # webservers
-gem "puma", "~> 2.8"
+gem "puma", "~> 2.9"
 
 # frameworks
 gem "brooklyn",     git: "https://github.com/luislavena/brooklyn.git",     branch: "master"
