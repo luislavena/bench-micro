@@ -17,6 +17,14 @@ GIT
       rack
 
 GIT
+  remote: https://github.com/jeremyevans/roda.git
+  revision: 61696b5cad6285b8e3f57927b906d38a215d1550
+  branch: master
+  specs:
+    roda (0.9.0)
+      rack
+
+GIT
   remote: https://github.com/lotus/router.git
   revision: 5ddb5e327c6f7c48e1e57be92da579aa39245ab4
   branch: master
@@ -138,6 +146,7 @@ DEPENDENCIES
   railties (~> 4.0.4)
   ramaze
   rambutan
+  roda!
   scorched!
   sinatra
   tzinfo

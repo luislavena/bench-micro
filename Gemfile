@@ -14,6 +14,7 @@ gem "nancy",        git: "https://github.com/guilleiguaran/nancy.git",     branc
 gem "nyny"
 gem "ramaze"
 gem "rambutan"
+gem "roda",         git: "https://github.com/jeremyevans/roda.git",        branch: "master"
 gem "scorched",     git: "https://github.com/Wardrop/Scorched.git",        branch: "master"
 gem "sinatra"
 gem "mustermann",   git: "https://github.com/rkh/mustermann.git",          branch: "master"

@@ -29,6 +29,7 @@ The following microframeworks were considered when doing this research:
 - ~~[Rails](https://github.com/rails/rails) - [rails.ru](apps/rails.ru)~~
 - [Ramaze](https://github.com/Ramaze/ramaze) - [ramaze.ru](apps/ramaze.ru)
 - [Rambutan](https://github.com/NewRosies/rambutan) - [rambutan.ru](apps/rambutan.ru)
+- [Roda](https://github.com/jeremyevans/roda) - [roda.ru](apps/roda.ru)
 - [Scorched](https://github.com/Wardrop/Scorched) - [scorched.ru](apps/scorched.ru)
 - [Sinatra](https://github.com/sinatra/sinatra) - [sinatra.ru](apps/sinatra.ru)
 
