@@ -71,20 +71,21 @@ Yup, I do:
 ```
 Framework            Requests/sec  % from best
 ----------------------------------------------
-rack                      8889.71       100.0%
-mustermann                7819.58       87.96%
-cuba                      7435.60       83.64%
-hobbit                    7396.14        83.2%
-lotus-router              7315.17       82.29%
-rack-response             6876.80       77.36%
-brooklyn                  6535.37       73.52%
-roda                      6110.97       68.74%
-rambutan                  6049.85       68.05%
-nancy                     5522.54       62.12%
-nyny                      4045.68       45.51%
-sinatra                   2868.14       32.26%
-scorched                  1628.58       18.32%
-ramaze                    1332.11       14.98%
+rack                     15009.35       100.0%
+mustermann               12584.95       83.85%
+hobbit                   11511.79        76.7%
+lotus-router             11500.60       76.62%
+cuba                     11352.47       75.64%
+rack-response            11079.75       73.82%
+brooklyn                 10090.09       67.23%
+rambutan                  9335.41        62.2%
+roda                      9290.58        61.9%
+nancy                     8361.81       55.71%
+nyny                      5564.23       37.07%
+gin                       5304.90       35.34%
+sinatra                   3975.23       26.49%
+scorched                  2105.23       14.03%
+ramaze                    1794.33       11.95%
 ```
 <!-- speed_table_end -->
 
@@ -98,12 +99,13 @@ hobbit                  70        1976
 mustermann              71        2040
 cuba                    72        1936
 rack-response           79        3072
-roda                    91        3284
 lotus-router            91        2080
+roda                    91        3284
 brooklyn                98        2432
 nancy                  107        3440
 rambutan               114        3448
 nyny                   173        5248
+gin                    214        9372
 sinatra                253       10011
 ramaze                 575       23797
 scorched              1708      115524
