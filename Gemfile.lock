@@ -81,6 +81,10 @@ GEM
     cuba (3.1.1)
       rack
     erubis (2.7.0)
+    gin (1.2.1)
+      rack (~> 1.1)
+      rack-protection (~> 1.0)
+      tilt (~> 1.4)
     http_router (0.11.1)
       rack (>= 1.0.0)
       url_mount (~> 0.2.1)
@@ -137,6 +141,7 @@ DEPENDENCIES
   allocation_stats
   brooklyn!
   cuba
+  gin
   hobbit!
   lotus-router!
   mustermann!

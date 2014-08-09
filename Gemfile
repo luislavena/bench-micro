@@ -18,6 +18,7 @@ gem "roda",         git: "https://github.com/jeremyevans/roda.git",        branc
 gem "scorched",     git: "https://github.com/Wardrop/Scorched.git",        branch: "master"
 gem "sinatra"
 gem "mustermann",   git: "https://github.com/rkh/mustermann.git",          branch: "master"
+gem "gin"
 
 # rails
 gem "actionpack", "~> 4.0.4"
