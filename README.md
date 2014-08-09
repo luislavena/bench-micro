@@ -114,4 +114,4 @@ scorched              1708      115524
 These numbers were collected on:
 
 - OSX, 10.8.5, MacBook Pro i5 (2.5GHz), 8GB 1600 MHz DDR3.
-- ruby 2.1.1p76 (GCC 4.7.3)
+- ruby 2.1.2p95 (GCC 4.7.3)
