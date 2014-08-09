@@ -20,6 +20,7 @@ The following microframeworks were considered when doing this research:
 
 - [Brooklyn](https://github.com/luislavena/brooklyn) - [brooklyn.ru](apps/brooklyn.ru)
 - [Cuba](https://github.com/soveran/cuba) - [cuba.ru](apps/cuba.ru)
+- [Gin](https://github.com/jcasts/gin) - [gin.ru](apps/gin.ru)
 - [Hobbit](https://github.com/patriciomacadden/hobbit) - [hobbit.ru](apps/hobbit.ru)
 - [Lotus (Router)](https://github.com/lotus/router) - [lotus-router.ru](apps/lotus-router.ru)
 - [Nancy](https://github.com/heapsource/nancy) - [nancy.ru](apps/nancy.ru)
@@ -98,12 +99,13 @@ hobbit                  70        1976
 mustermann              71        2040
 cuba                    72        1936
 rack-response           79        3072
-roda                    91        3284
 lotus-router            91        2080
+roda                    91        3284
 brooklyn                98        2432
 nancy                  107        3440
 rambutan               114        3448
 nyny                   173        5248
+gin                    214        9372
 sinatra                253       10011
 ramaze                 575       23797
 scorched              1708      115524
