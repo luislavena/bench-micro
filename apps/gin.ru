@@ -1,7 +1,9 @@
 require 'gin'
 
 class HelloWorldCtrl < Gin::Controller
-  def index; "Hello World!"; end
+  def index
+    "Hello World!"
+  end
 end
 
 class MyApp < Gin::App
