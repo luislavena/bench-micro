@@ -55,7 +55,7 @@ class AllocationsBenchmarker
   end
 
   def stats
-    @stats ||= AllocationStats.new(burn: 1).trace do
+    @stats ||= AllocationStats.new(burn: 5).trace do
       app.call(request)
     end
   end
