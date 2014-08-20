@@ -1,4 +1,29 @@
 GIT
+  remote: https://github.com/srawlins/allocation_stats.git
+  revision: e97d0c24fd758f424ba92b8298b0ee4e9f7fcf4f
+  branch: master
+  specs:
+    allocation_stats (0.1.5)
+
+GIT
+  remote: https://github.com/rkh/mustermann.git
+  revision: cc4db43b8c09831d9c968e3c6e99539e0dc86dee
+  branch: master
+  specs:
+    mustermann (0.3.0)
+      tool (~> 0.2)
+
+GIT
+  remote: https://github.com/sinatra/sinatra.git
+  revision: 39ce4ebaf9f42cf23d8b8e04682560ac5d291617
+  branch: master
+  specs:
+    sinatra (1.4.5)
+      rack (~> 1.4)
+      rack-protection (~> 1.4)
+      tilt (>= 1.3, < 3)
+
+GIT
   remote: https://github.com/Wardrop/Scorched.git
   revision: 63ecd6e9740b51619f948ae565243c3bbd12b0f6
   branch: master
@@ -9,19 +34,30 @@ GIT
       tilt (~> 1.4)
 
 GIT
+  remote: https://github.com/jeremyevans/roda.git
+  revision: 9171fdf3dcad0a62ff55f61c5f58957d51709912
+  branch: master
+  specs:
+    roda (1.0.0)
+      rack
+
+GIT
+  remote: https://github.com/alisnic/nyny.git
+  revision: f7b742da812eddb044f29afbdf66a47be7cff419
+  branch: master
+  specs:
+    nyny (3.4.2)
+      actionpack (~> 4.0.2)
+      better_errors (~> 1.1.0)
+      rack-contrib (~> 1.1.0)
+      tilt (~> 1.4.1)
+
+GIT
   remote: https://github.com/guilleiguaran/nancy.git
   revision: b3d9e74edee49298a17f360a4567d90c63ad0c55
   branch: master
   specs:
     nancy (0.4.0)
-      rack
-
-GIT
-  remote: https://github.com/jeremyevans/roda.git
-  revision: 61696b5cad6285b8e3f57927b906d38a215d1550
-  branch: master
-  specs:
-    roda (0.9.0)
       rack
 
 GIT
@@ -34,6 +70,22 @@ GIT
       lotus-utils (~> 0)
 
 GIT
+  remote: https://github.com/patriciomacadden/hobbit.git
+  revision: 70893220ec6e844221430906711c97e90ed1bf2d
+  branch: master
+  specs:
+    hobbit (0.6.0)
+      rack
+
+GIT
+  remote: https://github.com/soveran/cuba.git
+  revision: 40b21c851f3b322193aa391007f68a46f4357157
+  branch: master
+  specs:
+    cuba (3.3.0)
+      rack
+
+GIT
   remote: https://github.com/luislavena/brooklyn.git
   revision: 691c71e3058aaa336e21f84cfcaf581b95375b17
   branch: master
@@ -41,45 +93,26 @@ GIT
     brooklyn (0.0.1)
       rack (~> 1.5.2)
 
-GIT
-  remote: https://github.com/patriciomacadden/hobbit.git
-  revision: 90362913995a9735c6cd4dc15b32b25f8b5656d9
-  branch: master
-  specs:
-    hobbit (0.6.0)
-      rack
-
-GIT
-  remote: https://github.com/rkh/mustermann.git
-  revision: c33eaf7a5ca887056b7ffae5392033ebdc10fd27
-  branch: master
-  specs:
-    mustermann (0.3.0)
-      tool (~> 0.2)
-
 GEM
   remote: https://rubygems.org/
   specs:
-    actionpack (4.0.8)
-      activesupport (= 4.0.8)
+    actionpack (4.0.9)
+      activesupport (= 4.0.9)
       builder (~> 3.1.0)
       erubis (~> 2.7.0)
       rack (~> 1.5.2)
       rack-test (~> 0.6.2)
-    activesupport (4.0.8)
+    activesupport (4.0.9)
       i18n (~> 0.6, >= 0.6.9)
       minitest (~> 4.2)
       multi_json (~> 1.3)
       thread_safe (~> 0.1)
       tzinfo (~> 0.3.37)
-    allocation_stats (0.1.5)
     better_errors (1.1.0)
       coderay (>= 1.0.0)
       erubis (>= 2.6.6)
     builder (3.1.4)
     coderay (1.1.0)
-    cuba (3.1.1)
-      rack
     erubis (2.7.0)
     gin (1.2.1)
       rack (~> 1.1)
@@ -94,11 +127,6 @@ GEM
     lotus-utils (0.2.0)
     minitest (4.7.5)
     multi_json (1.10.1)
-    nyny (3.4.1)
-      actionpack (~> 4.0.2)
-      better_errors (~> 1.1.0)
-      rack-contrib (~> 1.1.0)
-      tilt (~> 1.4.1)
     puma (2.9.0)
       rack (>= 1.1, < 2.0)
     rack (1.5.2)
@@ -116,10 +144,6 @@ GEM
       rake
     rambutan (0.0.1)
       http_router
-    sinatra (1.4.5)
-      rack (~> 1.4)
-      rack-protection (~> 1.4)
-      tilt (~> 1.3, >= 1.3.4)
     thread_safe (0.3.4)
     tilt (1.4.1)
     tool (0.2.2)
@@ -131,18 +155,18 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  allocation_stats
+  allocation_stats!
   brooklyn!
-  cuba
+  cuba!
   gin
   hobbit!
   lotus-router!
   mustermann!
   nancy!
-  nyny
+  nyny!
   puma (~> 2.9)
   ramaze
   rambutan
   roda!
   scorched!
-  sinatra
+  sinatra!
