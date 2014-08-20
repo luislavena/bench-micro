@@ -1,7 +1,7 @@
 #!/usr/bin/env ruby
 
-require File.expand_path("../support/speed_benchmarker", __FILE__)
-require File.expand_path("../support/speed_summary_table", __FILE__)
+require_relative "support/speed_benchmarker"
+require_relative "support/speed_summary_table"
 
 def redirect_stream(stream, path)
   old_stream = stream.dup

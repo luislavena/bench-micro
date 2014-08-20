@@ -1,7 +1,7 @@
 #!/usr/bin/env ruby
 
-require File.expand_path("../support/allocation_benchmarker", __FILE__)
-require File.expand_path("../support/allocation_summary_table", __FILE__)
+require_relative "support/allocation_benchmarker"
+require_relative "support/allocation_summary_table"
 
 results = Dir['apps/*.ru'].map do |file|
   tracker = AllocationsBenchmarker.new(file)
