@@ -94,14 +94,14 @@ ramaze                    1332.11       14.98%
 ```
 Framework       Allocs/Req Memsize/Req
 --------------------------------------
-rack                    56        1704
+rack                    60        1704
 hobbit                  70        1976
-mustermann              71        2040
-cuba                    72        1936
-rack-response           79        3072
-lotus-router            91        2080
-roda                    91        3284
+roda                    71        2144
+mustermann              73        2040
+rack-response           83        3072
+lotus-router            92        2272
 brooklyn                98        2432
+cuba                   100        3457
 nancy                  107        3440
 rambutan               114        3448
 nyny                   173        5248
