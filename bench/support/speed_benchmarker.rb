@@ -48,11 +48,11 @@ class Benchmarker
 
 
   def start_command
-    "puma -e production -t 16:16 #{config}"
+    "puma --environment production --threads 16:16 #{config}"
   end
 
   def wrk_command
-    "wrk -t 2  -d 2 http://localhost:9292/"
+    "wrk --threads 2 --duration 10 http://localhost:9292/"
   end
 
 
