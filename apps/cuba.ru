@@ -1,7 +1,7 @@
 require "cuba"
 
 HelloWorld = Cuba.new do
-  on default do
+  on get, /\z/ do
     res.write "Hello World!"
   end
 end
