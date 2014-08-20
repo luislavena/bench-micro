@@ -20,10 +20,10 @@ gem "sinatra"
 gem "mustermann",   git: "https://github.com/rkh/mustermann.git",          branch: "master"
 gem "gin"
 
-# rails
-gem "actionpack", "~> 4.0.4"
-gem "railties",   "~> 4.0.4"
-gem "tzinfo"
+# FIXME: rails
+# gem "actionpack", "~> 4.0.4"
+# gem "railties",   "~> 4.0.4"
+# gem "tzinfo"
 
 # debugging
 gem "allocation_stats"
