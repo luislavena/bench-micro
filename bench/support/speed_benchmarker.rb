@@ -31,11 +31,10 @@ class Benchmarker
       end
     }
     Process.detach(p1)
-    if start_command =~ /rails/
-      sleep 1.5
-    else
-      sleep 0.8
-    end
+
+    # wait for process to load
+    sleep 3
+
     p1
   end
 
