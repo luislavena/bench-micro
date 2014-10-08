@@ -1,14 +1,15 @@
-require "rails"
-require "rails/all"
+require "securerandom"
+require "action_controller/railtie"
+require "rails/test_unit/railtie"
 
 class HelloWorld < Rails::Application
   routes.append do
-    root "hello#world"
+    get "/", to: "hello#world"
   end
 
   config.cache_classes = true
   config.eager_load = true
-  config.secret_key_base = "49837489qkuweoiuoqwehisuakshdjksadhaisdy78o34y138974xyqp9rmye8yrpiokeuioqwzyoiuxftoyqiuxrhm3iou1hrzmjk"
+  config.secret_key_base = SecureRandom.hex(64)
 
   ["Rack::Lock", "ActionDispatch::Flash", "ActionDispatch::BestStandardsSupport",
    "Rack::Sendfile", "ActionDispatch::Static", "Rack::MethodOverride",
@@ -23,10 +24,8 @@ class HelloWorld < Rails::Application
 end
 
 class HelloController < ActionController::Metal
-  include ActionController::Rendering
-
   def world
-    render text: "Hello World!"
+    self.response_body = "Hello World!"
   end
 end
 
