@@ -25,21 +25,19 @@ class Benchmarker
   end
 
   def start_puma
-    p1 = fork {
-      silence_stream(STDOUT) do
-        execute start_command
-      end
-    }
-    Process.detach(p1)
+    pid = Process.spawn(start_command, err: :out, out: IO::NULL)
 
     # wait for process to load
     sleep 3
 
-    p1
+    pid
   end
 
   def stop_puma(server_pid)
     Process.kill("TERM", server_pid)
+
+    # wait before stop
+    Process.wait(server_pid)
   end
 
   def start_wrk
@@ -55,7 +53,6 @@ class Benchmarker
     "wrk --threads 2 --duration 10 http://localhost:9292/"
   end
 
-
   require 'pty'
   def execute(cmd)
     puts cmd
@@ -69,15 +66,5 @@ class Benchmarker
     rescue PTY::ChildExited
       puts "The child process exited!"
     end
-  end
-
-  # Silences any stream for the duration of the block.
-  def silence_stream(stream)
-    old_stream = stream.dup
-    stream.reopen('/dev/null')
-    stream.sync = true
-    yield
-  ensure
-    stream.reopen(old_stream)
   end
 end
