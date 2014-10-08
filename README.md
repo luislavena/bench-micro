@@ -97,19 +97,20 @@ Framework       Allocs/Req Memsize/Req
 --------------------------------------
 rack                    60        1704
 hobbit                  70        1976
-roda                    71        2144
+roda                    73        2144
 mustermann              73        2040
 rack-response           83        3072
 lotus-router            92        2272
 brooklyn                98        2432
 cuba                   100        3457
 nancy                  107        3440
-rambutan               114        3448
-nyny                   173        5248
-gin                    214        9372
-sinatra                253       10011
-ramaze                 575       23797
-scorched              1708      115524
+rambutan               116        3448
+nyny                   169        5248
+rails                  212        9109
+gin                    214        9419
+sinatra                255        6083
+ramaze                 579       21837
+scorched              1711      115524
 ```
 <!-- mem_table_end -->
 
