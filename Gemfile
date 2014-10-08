@@ -3,7 +3,7 @@ source "https://rubygems.org"
 ruby "2.1.3"
 
 # webservers
-gem "puma", "~> 2.9"
+gem "puma", "~> 2.9.1"
 
 # frameworks
 gem "brooklyn",     git: "https://github.com/luislavena/brooklyn.git",     branch: "master"
@@ -20,10 +20,9 @@ gem "sinatra",      git: "https://github.com/sinatra/sinatra.git",         branc
 gem "mustermann",   git: "https://github.com/rkh/mustermann.git",          branch: "master"
 gem "gin"
 
-# FIXME: rails
-# gem "actionpack", "~> 4.0.4"
-# gem "railties",   "~> 4.0.4"
-# gem "tzinfo"
+gem "actionpack", "~> 4.1.6"
+gem "railties",   "~> 4.1.6"
+gem "tzinfo"
 
 # debugging
 gem "allocation_stats", git: "https://github.com/srawlins/allocation_stats.git",
