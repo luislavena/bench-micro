@@ -72,22 +72,22 @@ Yup, I do:
 ```
 Framework            Requests/sec  % from best
 ----------------------------------------------
-rack                      8607.68       100.0%
-mustermann                7706.42       89.53%
-hobbit                    7313.19       84.96%
-lotus-router              7181.29       83.43%
-roda                      7002.94       81.36%
-rack-response             6689.92       77.72%
-brooklyn                  6437.88       74.79%
-rambutan                  6055.88       70.35%
-cuba                      6037.42       70.14%
-nancy                     5622.57       65.32%
-nyny                      4074.75       47.34%
-gin                       3806.78       44.23%
-sinatra                   2853.92       33.16%
-rails                     2517.19       29.24%
-scorched                  1636.35       19.01%
-ramaze                    1357.23       15.77%
+rack                      8426.71       100.0%
+mustermann                7431.67       88.19%
+hobbit                    7222.83       85.71%
+cuba                      7114.43       84.43%
+roda                      7024.97       83.37%
+lotus-router              6943.77        82.4%
+rack-response             6534.07       77.54%
+brooklyn                  6312.10       74.91%
+rambutan                  5399.59       64.08%
+nancy                     5214.94       61.89%
+gin                       3735.51       44.33%
+nyny                      3537.24       41.98%
+sinatra                   2525.73       29.97%
+rails                     2482.94       29.47%
+scorched                  1504.56       17.85%
+ramaze                    1277.85       15.16%
 ```
 <!-- speed_table_end -->
 
@@ -97,13 +97,13 @@ ramaze                    1357.23       15.77%
 Framework       Allocs/Req Memsize/Req
 --------------------------------------
 rack                    60        1704
+roda                    65        1904
 hobbit                  70        1976
-roda                    73        2144
 mustermann              73        2040
+cuba                    79        1936
 rack-response           83        3072
 lotus-router            92        2272
 brooklyn                98        2432
-cuba                   100        3457
 nancy                  107        3440
 rambutan               116        3448
 nyny                   169        5248

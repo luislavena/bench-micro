@@ -2,7 +2,7 @@ require "roda"
 
 class HelloWorld < Roda
   route do |r|
-    r.get "" do
+    r.root do
       "Hello World!"
     end
   end
