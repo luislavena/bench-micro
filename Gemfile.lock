@@ -110,10 +110,14 @@ GEM
       tilt (~> 1.4)
     scorched-accept (0.1)
       parslet (~> 1.7)
+    seg (0.0.1)
     sinatra (1.4.6)
       rack (~> 1.4)
       rack-protection (~> 1.4)
       tilt (>= 1.3, < 3)
+    syro (1.1.1)
+      rack (~> 1.6.0)
+      seg
     thor (0.19.1)
     thread_safe (0.3.5)
     tilt (1.4.1)
@@ -144,6 +148,7 @@ DEPENDENCIES
   roda
   scorched
   sinatra
+  syro
   tzinfo
 
 BUNDLED WITH

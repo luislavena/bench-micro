@@ -17,6 +17,7 @@ gem "rambutan"
 gem "roda"
 gem "scorched"
 gem "sinatra"
+gem "syro"
 gem "mustermann-simple"
 gem "gin"
 
