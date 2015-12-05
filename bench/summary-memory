@@ -3,7 +3,7 @@
 require_relative "support/allocation_benchmarker"
 require_relative "support/allocation_summary_table"
 
-results = Dir['apps/*.ru'].map do |file|
+results = Dir['apps/*.ru'].sort.map do |file|
   tracker = AllocationsBenchmarker.new(file)
   tracker.human_output
   Object.send(:remove_const, :APP)
