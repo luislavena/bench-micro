@@ -72,22 +72,21 @@ Yup, I do:
 ```
 Framework            Requests/sec  % from best
 ----------------------------------------------
-rack                      8426.71       100.0%
-mustermann                7431.67       88.19%
-hobbit                    7222.83       85.71%
-cuba                      7114.43       84.43%
-roda                      7024.97       83.37%
-lotus-router              6943.77        82.4%
-rack-response             6534.07       77.54%
-brooklyn                  6312.10       74.91%
-rambutan                  5399.59       64.08%
-nancy                     5214.94       61.89%
-gin                       3735.51       44.33%
-nyny                      3537.24       41.98%
-sinatra                   2525.73       29.97%
-rails                     2482.94       29.47%
-scorched                  1504.56       17.85%
-ramaze                    1277.85       15.16%
+rack                     17254.71       100.0%
+mustermann               15691.51       90.94%
+roda                     14706.61       85.23%
+hobbit                   14272.75       82.72%
+lotus-router             13783.69       79.88%
+cuba                     13760.01       79.75%
+rack-response            13112.62       75.99%
+rambutan                 10678.37       61.89%
+brooklyn                  9936.96       57.59%
+nancy                     9031.30       52.34%
+nyny                      7461.26       43.24%
+gin                       5663.04       32.82%
+rails                     5437.11       31.51%
+sinatra                   4218.04       24.45%
+ramaze                    1783.94       10.34%
 ```
 <!-- speed_table_end -->
 
@@ -96,27 +95,30 @@ ramaze                    1277.85       15.16%
 ```
 Framework       Allocs/Req Memsize/Req
 --------------------------------------
-rack                    60        1704
-roda                    65        1904
-hobbit                  70        1976
-mustermann              73        2040
-cuba                    79        1936
-rack-response           83        3072
-lotus-router            92        2272
-brooklyn                98        2432
-nancy                  107        3440
-rambutan               116        3448
-nyny                   169        5248
-rails                  212        9109
-gin                    214        9419
-sinatra                255        6083
-ramaze                 579       21837
-scorched              1711      115524
+rack                    38        3256
+hobbit                  45        3808
+roda                    45        3752
+mustermann              51        4112
+cuba                    53        4072
+rack-response           56        5312
+lotus-router            66        4944
+brooklyn                69        6412
+nancy                   75        7644
+nyny                    82        8396
+rambutan                85        6848
+rails                  113       10311
+gin                    198       17219
+sinatra                212       15783
+ramaze                 454       39670
 ```
 <!-- mem_table_end -->
 
 
 These numbers were collected on:
 
-- OSX, 10.8.5, MacBook Pro i5 (2.5GHz), 8GB 1600 MHz DDR3.
-- ruby 2.1.3p242 (clang 5.1 - clang-503.0.40)
+- Ubuntu 15.10 64-bit (kernel: 4.2.0-19-generic)
+- Dell XPS 13 (9343, QHD, Developer Edition)
+- Intel® Core™ i7-5500U CPU @ 2.40GHz × 4
+- 8GB RAM
+- 256GB SSD
+- ruby 2.2.3p173 (2015-08-18 revision 51636) [x86_64-linux]

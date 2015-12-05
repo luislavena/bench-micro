@@ -12,7 +12,7 @@ ensure
   stream.reopen(old_stream)
 end
 
-apps = Dir["apps/*.ru"]
+apps = Dir["apps/*.ru"].sort
 apps = apps.grep(%r(#{ARGV[0]})) if ARGV[0]
 warn "please wait... the output will come, when finished"
 redirect_stream(STDOUT, 'test.log') do
