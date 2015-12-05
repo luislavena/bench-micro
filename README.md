@@ -72,21 +72,22 @@ Yup, I do:
 ```
 Framework            Requests/sec  % from best
 ----------------------------------------------
-rack                     17254.71       100.0%
-mustermann               15691.51       90.94%
-roda                     14706.61       85.23%
-hobbit                   14272.75       82.72%
-lotus-router             13783.69       79.88%
-cuba                     13760.01       79.75%
-rack-response            13112.62       75.99%
-rambutan                 10678.37       61.89%
-brooklyn                  9936.96       57.59%
-nancy                     9031.30       52.34%
-nyny                      7461.26       43.24%
-gin                       5663.04       32.82%
-rails                     5437.11       31.51%
-sinatra                   4218.04       24.45%
-ramaze                    1783.94       10.34%
+rack                     18979.54       100.0%
+mustermann               16466.79       86.76%
+roda                     15329.83       80.77%
+syro                     15312.13       80.68%
+cuba                     13921.44       73.35%
+hobbit                   13804.59       72.73%
+rack-response            13564.87       71.47%
+lotus-router             13341.14       70.29%
+rambutan                 10982.39       57.86%
+brooklyn                 10136.64       53.41%
+nancy                     8966.56       47.24%
+nyny                      8107.73       42.72%
+rails                     5773.34       30.42%
+gin                       5670.34       29.88%
+sinatra                   4544.52       23.94%
+ramaze                    2005.40       10.57%
 ```
 <!-- speed_table_end -->
 
@@ -96,6 +97,7 @@ ramaze                    1783.94       10.34%
 Framework       Allocs/Req Memsize/Req
 --------------------------------------
 rack                    38        3256
+syro                    43        3536
 hobbit                  45        3808
 roda                    45        3752
 mustermann              51        4112
