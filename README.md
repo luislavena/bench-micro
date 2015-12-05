@@ -72,22 +72,22 @@ Yup, I do:
 ```
 Framework            Requests/sec  % from best
 ----------------------------------------------
-rack                      8426.71       100.0%
-mustermann                7431.67       88.19%
-hobbit                    7222.83       85.71%
-cuba                      7114.43       84.43%
-roda                      7024.97       83.37%
-lotus-router              6943.77        82.4%
-rack-response             6534.07       77.54%
-brooklyn                  6312.10       74.91%
-rambutan                  5399.59       64.08%
-nancy                     5214.94       61.89%
-gin                       3735.51       44.33%
-nyny                      3537.24       41.98%
-sinatra                   2525.73       29.97%
-rails                     2482.94       29.47%
-scorched                  1504.56       17.85%
-ramaze                    1277.85       15.16%
+rack                     18055.15       100.0%
+mustermann               16119.30       89.28%
+roda                     15132.17       83.81%
+cuba                     14292.99       79.16%
+hobbit                   14023.97       77.67%
+lotus-router             13657.70       75.64%
+rack-response            12628.12       69.94%
+rambutan                 11009.81       60.98%
+brooklyn                 10893.70       60.34%
+nancy                     9413.79       52.14%
+nyny                      6559.78       36.33%
+gin                       5748.94       31.84%
+sinatra                   4878.85       27.02%
+rails                     4136.08       22.91%
+scorched                  2477.22       13.72%
+ramaze                    1980.78       10.97%
 ```
 <!-- speed_table_end -->
 
@@ -109,9 +109,9 @@ rambutan               116        3448
 nyny                   169        5248
 rails                  212        9109
 gin                    214        9419
-sinatra                255        6083
-ramaze                 579       21837
-scorched              1711      115524
+sinatra                254        6075
+ramaze                 579       21836
+scorched              1711      115508
 ```
 <!-- mem_table_end -->
 
