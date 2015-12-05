@@ -118,5 +118,9 @@ scorched              1711      115524
 
 These numbers were collected on:
 
-- OSX, 10.8.5, MacBook Pro i5 (2.5GHz), 8GB 1600 MHz DDR3.
-- ruby 2.1.3p242 (clang 5.1 - clang-503.0.40)
+- Ubuntu 15.10 64-bit (kernel: 4.2.0-19-generic)
+- Dell XPS 13 (9343, QHD, Developer Edition)
+- Intel® Core™ i7-5500U CPU @ 2.40GHz × 4
+- 8GB RAM
+- 256GB SSD
+- ruby 2.1.3p242 (2014-09-19 revision 47630) [x86_64-linux]
