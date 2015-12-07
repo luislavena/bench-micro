@@ -33,6 +33,7 @@ The following microframeworks were considered when doing this research:
 - [Roda](https://github.com/jeremyevans/roda) - [roda.ru](apps/roda.ru)
 - [Scorched](https://github.com/Wardrop/Scorched) - [scorched.ru](apps/scorched.ru)
 - [Sinatra](https://github.com/sinatra/sinatra) - [sinatra.ru](apps/sinatra.ru)
+- [Syro](https://github.com/soveran/syro) - [syro](apps/syro.ru)
 
 Please note that while Rails has been added to the list, it is just a
 minimalistic representation (using Metal, no full middleware stack, etc). You
