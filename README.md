@@ -119,9 +119,9 @@ ramaze                 454       39670
 
 These numbers were collected on:
 
-- Ubuntu 15.10 64-bit (kernel: 4.2.0-19-generic)
+- Ubuntu 15.10 64-bit (kernel: 4.2.0-35-generic)
 - Dell XPS 13 (9343, QHD, Developer Edition)
 - Intel® Core™ i7-5500U CPU @ 2.40GHz × 4
 - 8GB RAM
 - 256GB SSD
-- ruby 2.2.3p173 (2015-08-18 revision 51636) [x86_64-linux]
+- ruby 2.2.4p230 (2015-12-16 revision 53155) [x86_64-linux]
