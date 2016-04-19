@@ -73,22 +73,22 @@ Yup, I do:
 ```
 Framework            Requests/sec  % from best
 ----------------------------------------------
-rack                     19138.63       100.0%
-mustermann               15877.18       82.96%
-roda                     15773.44       82.42%
-syro                     15677.54       81.92%
-cuba                     14664.93       76.62%
-hobbit                   14346.23       74.96%
-lotus-router             13298.08       69.48%
-rack-response            12980.98       67.83%
-rambutan                 10817.10       56.52%
-brooklyn                 10116.29       52.86%
-nancy                     9118.49       47.64%
-nyny                      8170.25       42.69%
-rails                     5847.11       30.55%
-gin                       5689.37       29.73%
-sinatra                   4559.17       23.82%
-ramaze                    1986.19       10.38%
+rack                     18639.51       100.0%
+mustermann               15263.92       81.89%
+syro                     15127.53       81.16%
+roda                     15013.33       80.55%
+cuba                     13889.65       74.52%
+hobbit                   13595.20       72.94%
+rack-response            13414.93       71.97%
+rambutan                 10948.59       58.74%
+brooklyn                  9987.20       53.58%
+hanami-router             9486.78        50.9%
+nancy                     8938.53       47.95%
+nyny                      8132.90       43.63%
+rails                     5817.82       31.21%
+gin                       5699.87       30.58%
+sinatra                   4468.89       23.98%
+ramaze                    1933.04       10.37%
 ```
 <!-- speed_table_end -->
 
@@ -104,15 +104,15 @@ roda                    45        3752
 mustermann              51        4112
 cuba                    53        4072
 rack-response           56        5312
-lotus-router            66        4944
 brooklyn                69        6412
 nancy                   75        7644
 nyny                    82        8396
 rambutan                85        6848
+hanami-router           90        7859
 rails                  113       10311
 gin                    198       17219
 sinatra                212       15783
-ramaze                 454       39670
+ramaze                 464       41360
 ```
 <!-- mem_table_end -->
 
