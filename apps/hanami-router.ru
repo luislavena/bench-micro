@@ -1,6 +1,6 @@
-require "lotus/router"
+require "hanami/router"
 
-APP = Lotus::Router.new do
+APP = Hanami::Router.new do
   get "/", to: ->(env) { [200, {'Content-Type'=>'text/html'}, ["Hello World!"]] }
 end
 
