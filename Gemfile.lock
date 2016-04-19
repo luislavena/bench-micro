@@ -46,6 +46,10 @@ GEM
       rack (~> 1.1)
       rack-protection (~> 1.0)
       tilt (~> 1.4)
+    hanami-router (0.6.2)
+      hanami-utils (~> 0.7)
+      http_router (~> 0.11)
+    hanami-utils (0.7.1)
     hobbit (0.6.0)
       rack
     http_router (0.11.2)
@@ -57,10 +61,6 @@ GEM
     json (1.8.3)
     loofah (2.0.3)
       nokogiri (>= 1.5.9)
-    lotus-router (0.4.3)
-      http_router (~> 0.11)
-      lotus-utils (~> 0.5, >= 0.5.1)
-    lotus-utils (0.5.2)
     mini_portile2 (2.0.0)
     minitest (5.8.3)
     mustermann (0.4.0)
@@ -136,8 +136,8 @@ DEPENDENCIES
   brooklyn!
   cuba
   gin
+  hanami-router
   hobbit
-  lotus-router
   mustermann-simple
   nancy!
   nyny
@@ -152,4 +152,4 @@ DEPENDENCIES
   tzinfo
 
 BUNDLED WITH
-   1.10.6
+   1.11.2
