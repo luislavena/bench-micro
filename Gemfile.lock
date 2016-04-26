@@ -14,6 +14,13 @@ GIT
     brooklyn (0.0.1)
       rack (>= 1.5.2, < 2.0)
 
+GIT
+  remote: https://github.com/mfdavid/rackstep.git
+  revision: da2f9aa4eed97143113cc23f4528a8ced0bbd205
+  branch: master
+  specs:
+    rackstep (0.0.5)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -142,6 +149,7 @@ DEPENDENCIES
   nancy!
   nyny
   puma (~> 2.15)
+  rackstep!
   railties (~> 4.2)
   ramaze
   rambutan
