@@ -20,6 +20,7 @@ gem "sinatra"
 gem "syro"
 gem "mustermann-simple"
 gem "gin"
+gem "rackstep",     git: "https://github.com/mfdavid/rackstep.git",     branch: "master"
 
 gem "actionpack", "~> 4.2"
 gem "railties",   "~> 4.2"
