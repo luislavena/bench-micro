@@ -74,22 +74,23 @@ Yup, I do:
 ```
 Framework            Requests/sec  % from best
 ----------------------------------------------
-rack                     18639.51       100.0%
-mustermann               15263.92       81.89%
-syro                     15127.53       81.16%
-roda                     15013.33       80.55%
-cuba                     13889.65       74.52%
-hobbit                   13595.20       72.94%
-rack-response            13414.93       71.97%
-rambutan                 10948.59       58.74%
-brooklyn                  9987.20       53.58%
-hanami-router             9486.78        50.9%
-nancy                     8938.53       47.95%
-nyny                      8132.90       43.63%
-rails                     5817.82       31.21%
-gin                       5699.87       30.58%
-sinatra                   4468.89       23.98%
-ramaze                    1933.04       10.37%
+rack                     18430.38       100.0%
+mustermann               15115.67       82.01%
+roda                     14166.73       76.87%
+syro                     13533.86       73.43%
+hobbit                   13305.26       72.19%
+rack-response            13284.65       72.08%
+cuba                     11907.24       64.61%
+rambutan                  9360.66       50.79%
+brooklyn                  8347.96       45.29%
+hanami-router             8097.03       43.93%
+rackstep                  7711.24       41.84%
+nancy                     7695.71       41.76%
+nyny                      7071.25       38.37%
+rails                     4890.76       26.54%
+gin                       4855.73       26.35%
+sinatra                   3884.10       21.07%
+ramaze                    1802.35        9.78%
 ```
 <!-- speed_table_end -->
 
@@ -108,6 +109,7 @@ rack-response           56        5312
 brooklyn                69        6412
 nancy                   75        7644
 nyny                    82        8396
+rackstep                82        6008
 rambutan                85        6848
 hanami-router           90        7859
 rails                  113       10311
