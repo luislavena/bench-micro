@@ -75,23 +75,24 @@ Yup, I do:
 ```
 Framework            Requests/sec  % from best
 ----------------------------------------------
-rack                     18430.38       100.0%
-mustermann               15115.67       82.01%
-roda                     14166.73       76.87%
-syro                     13533.86       73.43%
-hobbit                   13305.26       72.19%
-rack-response            13284.65       72.08%
-cuba                     11907.24       64.61%
-rambutan                  9360.66       50.79%
-brooklyn                  8347.96       45.29%
-hanami-router             8097.03       43.93%
-rackstep                  7711.24       41.84%
-nancy                     7695.71       41.76%
-nyny                      7071.25       38.37%
-rails                     4890.76       26.54%
-gin                       4855.73       26.35%
-sinatra                   3884.10       21.07%
-ramaze                    1802.35        9.78%
+rack                     18544.85       100.0%
+syro                     15454.22       83.33%
+mustermann               15199.80       81.96%
+roda                     15042.26       81.11%
+cuba                     13948.11       75.21%
+hobbit                   13898.69       74.95%
+rack-response            13822.22       74.53%
+rambutan                 10804.74       58.26%
+brooklyn                  9938.15       53.59%
+hanami-router             9469.52       51.06%
+rackstep                  9089.18       49.01%
+nancy                     8808.90        47.5%
+nyny                      7720.06       41.63%
+rails                     5810.33       31.33%
+gin                       5549.02       29.92%
+sinatra                   4441.61       23.95%
+grape                     3345.01       18.04%
+ramaze                    1936.36       10.44%
 ```
 <!-- speed_table_end -->
 
@@ -116,6 +117,7 @@ hanami-router           90        7859
 rails                  113       10311
 gin                    198       17219
 sinatra                212       15783
+grape                  257       20236
 ramaze                 464       41360
 ```
 <!-- mem_table_end -->
