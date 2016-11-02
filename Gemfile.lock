@@ -164,6 +164,7 @@ GEM
       coercible (~> 1.0)
       descendants_tracker (~> 0.0, >= 0.0.3)
       equalizer (~> 0.0, >= 0.0.9)
+    watts (1.0.4)
 
 PLATFORMS
   ruby
@@ -181,6 +182,7 @@ DEPENDENCIES
   nancy!
   nyny
   puma (~> 2.15)
+  rack
   rackstep!
   railties (~> 4.2)
   ramaze
@@ -190,6 +192,7 @@ DEPENDENCIES
   sinatra
   syro
   tzinfo
+  watts
 
 BUNDLED WITH
-   1.11.2
+   1.12.5
