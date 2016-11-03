@@ -75,24 +75,25 @@ Yup, I do:
 ```
 Framework            Requests/sec  % from best
 ----------------------------------------------
-rack                     18544.85       100.0%
-syro                     15454.22       83.33%
-mustermann               15199.80       81.96%
-roda                     15042.26       81.11%
-cuba                     13948.11       75.21%
-hobbit                   13898.69       74.95%
-rack-response            13822.22       74.53%
-rambutan                 10804.74       58.26%
-brooklyn                  9938.15       53.59%
-hanami-router             9469.52       51.06%
-rackstep                  9089.18       49.01%
-nancy                     8808.90        47.5%
-nyny                      7720.06       41.63%
-rails                     5810.33       31.33%
-gin                       5549.02       29.92%
-sinatra                   4441.61       23.95%
-grape                     3345.01       18.04%
-ramaze                    1936.36       10.44%
+rack                     15730.90      100.00%
+watts                    14157.61       90.00%
+mustermann               13235.57       84.14%
+syro                     12937.25       82.24%
+roda                     12830.23       81.56%
+hobbit                   12231.93       77.76%
+rack-response            11614.01       73.83%
+cuba                     11586.47       73.65%
+rambutan                  9477.59       60.25%
+brooklyn                  9209.93       58.55%
+rackstep                  8920.60       56.71%
+hanami-router             8766.85       55.73%
+nancy                     8092.11       51.44%
+nyny                      7207.98       45.82%
+rails                     5264.29       33.46%
+gin                       5181.64       32.94%
+sinatra                   4161.55       26.45%
+grape                     3227.50       20.52%
+ramaze                    1676.37       10.66%
 ```
 <!-- speed_table_end -->
 
@@ -101,24 +102,25 @@ ramaze                    1936.36       10.44%
 ```
 Framework       Allocs/Req Memsize/Req
 --------------------------------------
-rack                    38        3256
-syro                    43        3536
-hobbit                  45        3808
-roda                    45        3752
-mustermann              51        4112
-cuba                    53        4072
-rack-response           56        5312
-brooklyn                69        6412
-nancy                   75        7644
-nyny                    82        8396
-rackstep                82        6008
-rambutan                85        6848
-hanami-router           90        7859
-rails                  113       10311
-gin                    198       17219
-sinatra                212       15783
-grape                  257       20236
-ramaze                 464       41360
+rack                    38        3272
+syro                    44        4088
+hobbit                  46        4360
+roda                    46        4264
+watts                   47        3632
+mustermann              49        4048
+cuba                    53        4544
+rack-response           56        4896
+brooklyn                70        6924
+nancy                   76        7764
+rackstep                82        5632
+nyny                    83        8516
+rambutan                85        6432
+hanami-router           90        7875
+rails                  113       10247
+gin                    197       16659
+sinatra                212       15247
+grape                  258       20332
+ramaze                 466       40985
 ```
 <!-- mem_table_end -->
 
