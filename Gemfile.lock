@@ -74,6 +74,8 @@ GEM
     rack (2.0.1)
     rack-accept (0.4.5)
       rack (>= 0.4)
+    rack-app (6.2.0)
+      rack
     rack-protection (2.0.0.rc2)
       rack
     rack-test (0.6.3)
@@ -129,6 +131,7 @@ DEPENDENCIES
   hobbit
   puma
   rack
+  rack-app
   rackstep
   railties
   rambutan

@@ -63,17 +63,18 @@ Yup, I do:
 ```
 Framework            Requests/sec  % from best
 ----------------------------------------------
-rack                      8475.10       100.0%
-syro                      7324.78       86.43%
-roda                      7197.19       84.92%
-hobbit                    6830.05       80.59%
-hanami-router             6385.09       75.34%
-cuba                      5535.61       65.32%
-rambutan                  5392.14       63.62%
-rackstep                  3988.83       47.07%
-sinatra                   2507.82       29.59%
-grape                     2126.17       25.09%
-rails-api                  918.56       10.84%
+rack                      8457.42       100.0%
+syro                      7579.01       89.61%
+roda                      7186.54       84.97%
+hobbit                    6994.16        82.7%
+cuba                      6985.13       82.59%
+hanami-router             6767.20       80.01%
+rambutan                  5483.29       64.83%
+rack-app                  5033.19       59.51%
+rackstep                  4033.93        47.7%
+sinatra                   2570.05       30.39%
+grape                     2287.61       27.05%
+rails-api                  944.77       11.17%
 ```
 <!-- speed_table_end -->
 
@@ -89,6 +90,7 @@ cuba                    40        3408
 hobbit                  42        3648
 hanami-router           61        4600
 rackstep                74        4664
+rack-app                76        6904
 rambutan                76        5664
 sinatra                182       12008
 grape                  237       17168

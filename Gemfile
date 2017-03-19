@@ -6,11 +6,12 @@ ruby "~> 2.4"
 gem "puma"
 
 # frameworks
-gem "rack"
 gem "cuba"
 gem "grape"
 gem "hanami-router", ">= 1.0.0.beta3"
 gem "hobbit"
+gem "rack"
+gem "rack-app"
 gem "rackstep"
 gem "rambutan"
 gem "roda"
