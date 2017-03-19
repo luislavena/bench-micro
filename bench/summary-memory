@@ -1,5 +1,3 @@
-#!/usr/bin/env ruby
-
 require_relative "support/allocation_benchmarker"
 require_relative "support/allocation_summary_table"
 

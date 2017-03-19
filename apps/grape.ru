@@ -1,4 +1,4 @@
-require 'grape'
+require "grape"
 
 class APP < Grape::API
   get '/' do

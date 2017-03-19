@@ -3,29 +3,22 @@ source "https://rubygems.org"
 ruby "~> 2.4"
 
 # webservers
-gem "puma", "~> 2.15"
+gem "puma"
 
 # frameworks
-gem "brooklyn",     git: "https://github.com/luislavena/brooklyn.git",     branch: "master"
+gem "rack"
 gem "cuba"
-gem "gin"
 gem "grape"
-gem "hanami-router"
+gem "hanami-router", ">= 1.0.0.beta3"
 gem "hobbit"
-gem "mustermann-simple"
-gem "nancy",        git: "https://github.com/guilleiguaran/nancy.git",     branch: "master"
-gem "nyny"
-gem "rackstep",     git: "https://github.com/mfdavid/rackstep.git",     branch: "master"
-gem "ramaze"
+gem "rackstep"
 gem "rambutan"
 gem "roda"
-gem "scorched"
-gem "sinatra"
+gem "sinatra", ">= 2.0.0.rc2"
 gem "syro"
 
-gem "actionpack", "~> 4.2"
-gem "railties",   "~> 4.2"
-gem "tzinfo"
+gem "actionpack"
+gem "railties"
 
 # debugging
 gem "allocation_stats"
