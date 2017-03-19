@@ -25,7 +25,7 @@ Rack 2 compatible frameworks
 - [Rack](https://github.com/rack/rack) - [rack.ru](apps/rack.ru) + [rack-response.ru](apps/rack-response.ru)
 - [Rack-App](https://github.com/rack-app/rack-app) - [rack-app.ru](apps/rack-app.ru)
 - [RackStep](https://github.com/mfdavid/rackstep) - [rackstep.ru](apps/rackstep.ru)
-- [Rails (API)](https://github.com/rails/rails) - [rails.ru](apps/rails-api.ru)
+- [Rails (API + Metal)](https://github.com/rails/rails) - [rails-api.ru](apps/rails-api.ru)  + [rails-metal.ru](apps/rails-metal.ru)
 - [Rambutan](https://github.com/NewRosies/rambutan) - [rambutan.ru](apps/rambutan.ru)
 - [Roda](https://github.com/jeremyevans/roda) - [roda.ru](apps/roda.ru)
 - [Sinatra](https://github.com/sinatra/sinatra) - [sinatra.ru](apps/sinatra.ru)
@@ -64,19 +64,20 @@ Yup, I do:
 ```
 Framework            Requests/sec  % from best
 ----------------------------------------------
-rack                      8392.73       100.0%
-syro                      7493.37       89.28%
-roda                      7126.44       84.91%
-hobbit                    7037.02       83.85%
-cuba                      6842.70       81.53%
-hanami-router             6627.27       78.96%
-rack-response             6285.45       74.89%
-rambutan                  5317.21       63.35%
-rack-app                  4912.31       58.53%
-rackstep                  3982.89       47.46%
-sinatra                   2543.77       30.31%
-grape                     2251.54       26.83%
-rails-api                  927.63       11.05%
+rack                      8416.02       100.0%
+syro                      7533.91       89.52%
+roda                      7110.69       84.49%
+hobbit                    6996.43       83.13%
+cuba                      6853.12       81.43%
+hanami-router             6643.29       78.94%
+rack-response             6296.66       74.82%
+rambutan                  5404.24       64.21%
+rack-app                  4889.13       58.09%
+rackstep                  4014.48        47.7%
+rails-metal               3468.12       41.21%
+sinatra                   2541.54        30.2%
+grape                     2288.87        27.2%
+rails-api                  936.83       11.13%
 ```
 <!-- speed_table_end -->
 
@@ -91,10 +92,11 @@ roda                    38        3328
 cuba                    40        3408
 hobbit                  42        3648
 rack-response           49        3856
+rails-metal             53        5448
 hanami-router           61        4600
 rackstep                74        4664
-rambutan                76        5664
 rack-app                76        6904
+rambutan                76        5664
 sinatra                182       12008
 grape                  237       17168
 rails-api              378       27576
