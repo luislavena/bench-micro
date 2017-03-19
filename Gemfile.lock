@@ -35,6 +35,12 @@ GEM
     enumerable-lazy (0.0.2)
     equalizer (0.0.11)
     erubis (2.7.0)
+    flame (4.11.3.2)
+      gorilla-patch (~> 2, >= 2.0.0)
+      rack (~> 2)
+      thor (~> 0)
+      tilt (>= 2.0, < 3)
+    gorilla-patch (2.1.1)
     grape (0.17.0)
       activesupport
       builder
@@ -126,6 +132,7 @@ DEPENDENCIES
   actionpack
   allocation_stats
   cuba
+  flame
   grape
   hanami-router (>= 1.0.0.beta3)
   hobbit

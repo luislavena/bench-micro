@@ -19,6 +19,7 @@ nor to do a silly *fibonacci-as-a-service*, ok?
 Rack 2 compatible frameworks
 
 - [Cuba](https://github.com/soveran/cuba) - [cuba.ru](apps/cuba.ru)
+- [Flame](https://github.com/AlexWayfer/flame) - [flame.ru](apps/flame.ru)
 - [Grape](https://github.com/ruby-grape/grape) - [grape.ru](apps/grape.ru)
 - [Hanami (Router)](https://github.com/hanami/router) - [hanami-router.ru](apps/hanami-router.ru)
 - [Hobbit](https://github.com/patriciomacadden/hobbit) - [hobbit.ru](apps/hobbit.ru)
@@ -64,20 +65,21 @@ Yup, I do:
 ```
 Framework            Requests/sec  % from best
 ----------------------------------------------
-rack                      8416.02       100.0%
-syro                      7533.91       89.52%
-roda                      7110.69       84.49%
-hobbit                    6996.43       83.13%
-cuba                      6853.12       81.43%
-hanami-router             6643.29       78.94%
-rack-response             6296.66       74.82%
-rambutan                  5404.24       64.21%
-rack-app                  4889.13       58.09%
-rackstep                  4014.48        47.7%
-rails-metal               3468.12       41.21%
-sinatra                   2541.54        30.2%
-grape                     2288.87        27.2%
-rails-api                  936.83       11.13%
+rack                      8411.26       100.0%
+syro                      7503.30       89.21%
+roda                      7155.80       85.07%
+hobbit                    6943.29       82.55%
+cuba                      6932.44       82.42%
+hanami-router             6660.09       79.18%
+rack-response             6259.96       74.42%
+rambutan                  5396.08       64.15%
+rack-app                  4946.58       58.81%
+flame                     4410.80       52.44%
+rackstep                  4008.45       47.66%
+rails-metal               3476.24       41.33%
+sinatra                   2569.99       30.55%
+grape                     2273.29       27.03%
+rails-api                  932.37       11.08%
 ```
 <!-- speed_table_end -->
 
@@ -95,8 +97,9 @@ rack-response           49        3856
 rails-metal             53        5448
 hanami-router           61        4600
 rackstep                74        4664
-rack-app                76        6904
 rambutan                76        5664
+rack-app                76        6904
+flame                   96        7130
 sinatra                182       12008
 grape                  237       17168
 rails-api              378       27576

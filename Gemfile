@@ -7,6 +7,7 @@ gem "puma"
 
 # frameworks
 gem "cuba"
+gem "flame"
 gem "grape"
 gem "hanami-router", ">= 1.0.0.beta3"
 gem "hobbit"
