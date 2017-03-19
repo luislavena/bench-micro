@@ -23,6 +23,7 @@ Rack 2 compatible frameworks
 - [Hanami (Router)](https://github.com/hanami/router) - [hanami-router.ru](apps/hanami-router.ru)
 - [Hobbit](https://github.com/patriciomacadden/hobbit) - [hobbit.ru](apps/hobbit.ru)
 - [Rack](https://github.com/rack/rack) - [rack.ru](apps/rack.ru) + [rack-response.ru](apps/rack-response.ru)
+- [Rack-App](https://github.com/rack-app/rack-app) - [rack-app.ru](apps/rack-app.ru)
 - [RackStep](https://github.com/mfdavid/rackstep) - [rackstep.ru](apps/rackstep.ru)
 - [Rails (API)](https://github.com/rails/rails) - [rails.ru](apps/rails-api.ru)
 - [Rambutan](https://github.com/NewRosies/rambutan) - [rambutan.ru](apps/rambutan.ru)
@@ -63,18 +64,19 @@ Yup, I do:
 ```
 Framework            Requests/sec  % from best
 ----------------------------------------------
-rack                      8457.42       100.0%
-syro                      7579.01       89.61%
-roda                      7186.54       84.97%
-hobbit                    6994.16        82.7%
-cuba                      6985.13       82.59%
-hanami-router             6767.20       80.01%
-rambutan                  5483.29       64.83%
-rack-app                  5033.19       59.51%
-rackstep                  4033.93        47.7%
-sinatra                   2570.05       30.39%
-grape                     2287.61       27.05%
-rails-api                  944.77       11.17%
+rack                      8392.73       100.0%
+syro                      7493.37       89.28%
+roda                      7126.44       84.91%
+hobbit                    7037.02       83.85%
+cuba                      6842.70       81.53%
+hanami-router             6627.27       78.96%
+rack-response             6285.45       74.89%
+rambutan                  5317.21       63.35%
+rack-app                  4912.31       58.53%
+rackstep                  3982.89       47.46%
+sinatra                   2543.77       30.31%
+grape                     2251.54       26.83%
+rails-api                  927.63       11.05%
 ```
 <!-- speed_table_end -->
 
@@ -88,10 +90,11 @@ syro                    38        3328
 roda                    38        3328
 cuba                    40        3408
 hobbit                  42        3648
+rack-response           49        3856
 hanami-router           61        4600
 rackstep                74        4664
-rack-app                76        6904
 rambutan                76        5664
+rack-app                76        6904
 sinatra                182       12008
 grape                  237       17168
 rails-api              378       27576
