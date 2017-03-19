@@ -1,4 +1,5 @@
 require_relative 'table_helpers'
+
 class AllocationSummaryTable
   include TableHelpers
   attr_accessor :results
