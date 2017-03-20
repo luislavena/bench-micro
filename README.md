@@ -42,7 +42,7 @@ $ wrk -t 2 http://localhost:9292/
 ```
 
 All the frameworks using [Puma](https://github.com/puma/puma) on
-Ruby 2.4, in production mode and starts 16 threads:
+Ruby 2.4, in production mode with 16 threads:
 
 ```console
 $ puma -e production -t 16:16 apps/<framework.ru>
@@ -65,21 +65,24 @@ Yup, I do:
 ```
 Framework            Requests/sec  % from best
 ----------------------------------------------
-rack                      8411.26       100.0%
-syro                      7503.30       89.21%
-roda                      7155.80       85.07%
-hobbit                    6943.29       82.55%
-cuba                      6932.44       82.42%
-hanami-router             6660.09       79.18%
-rack-response             6259.96       74.42%
-rambutan                  5396.08       64.15%
-rack-app                  4946.58       58.81%
-flame                     4410.80       52.44%
-rackstep                  4008.45       47.66%
-rails-metal               3476.24       41.33%
-sinatra                   2569.99       30.55%
-grape                     2273.29       27.03%
-rails-api                  932.37       11.08%
+rack                     18544.85       100.0%
+syro                     15454.22       83.33%
+mustermann               15199.80       81.96%
+roda                     15042.26       81.11%
+cuba                     13948.11       75.21%
+hobbit                   13898.69       74.95%
+rack-response            13822.22       74.53%
+rambutan                 10804.74       58.26%
+brooklyn                  9938.15       53.59%
+hanami-router             9469.52       51.06%
+rackstep                  9089.18       49.01%
+nancy                     8808.90        47.5%
+nyny                      7720.06       41.63%
+rails                     5810.33       31.33%
+gin                       5549.02       29.92%
+sinatra                   4441.61       23.95%
+grape                     3345.01       18.04%
+ramaze                    1936.36       10.44%
 ```
 <!-- speed_table_end -->
 
@@ -88,29 +91,33 @@ rails-api                  932.37       11.08%
 ```
 Framework       Allocs/Req Memsize/Req
 --------------------------------------
-rack                    34        2640
-syro                    38        3328
-roda                    38        3328
-cuba                    40        3408
-hobbit                  42        3648
-rack-response           49        3856
-rails-metal             53        5448
-hanami-router           61        4600
-rackstep                74        4664
-rambutan                76        5664
-rack-app                76        6904
-flame                   96        7130
-sinatra                182       12008
-grape                  237       17168
-rails-api              378       27576
+rack                    38        3256
+syro                    43        3536
+hobbit                  45        3808
+roda                    45        3752
+mustermann              51        4112
+cuba                    53        4072
+rack-response           56        5312
+brooklyn                69        6412
+nancy                   75        7644
+nyny                    82        8396
+rackstep                82        6008
+rambutan                85        6848
+hanami-router           90        7859
+rails                  113       10311
+gin                    198       17219
+sinatra                212       15783
+grape                  257       20236
+ramaze                 464       41360
 ```
 <!-- mem_table_end -->
 
 
-Test environment:
+These numbers were collected on:
 
-- MacBook Pro (13-inch, Early 2011)
-- 2,3 GHz Intel Core i5
-- 16 GB 1867 MHz DDR3
-- Crucial 250MX200 SSD
-- ruby 2.4.0p0 (2016-12-24 revision 57164) [x86_64-darwin16]
+- Ubuntu 15.10 64-bit (kernel: 4.2.0-35-generic)
+- Dell XPS 13 (9343, QHD, Developer Edition)
+- Intel® Core™ i7-5500U CPU @ 2.40GHz × 4
+- 8GB RAM
+- 256GB SSD
+- ruby 2.2.4p230 (2015-12-16 revision 53155) [x86_64-linux]
