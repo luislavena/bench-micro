@@ -1,7 +1,7 @@
 require "hobbit"
 
 class HelloWorld < Hobbit::Base
-  get '/' do
+  get "/" do
     "Hello World!"
   end
 end

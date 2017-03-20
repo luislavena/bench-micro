@@ -3,7 +3,7 @@ require "action_controller/railtie"
 
 class HelloWorld < Rails::Application
   routes.append do
-    get '/', to: 'hello#world'
+    get "/", to: "hello#world"
   end
 
   config.api_only = true

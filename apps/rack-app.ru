@@ -1,8 +1,8 @@
-require 'rack/app'
+require "rack/app"
 
 class HelloWorld < Rack::App
-  desc 'Hello World'
-  get '/' do
+  desc "Hello World"
+  get "/" do
     "Hello World!"
   end
 end

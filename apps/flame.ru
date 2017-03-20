@@ -8,7 +8,7 @@ end
 
 class HelloWorld < Flame::Application
   mount HelloController do
-    get '/', :world
+    get "/", :world
   end
 end
 
