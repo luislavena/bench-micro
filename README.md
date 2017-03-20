@@ -32,6 +32,11 @@ Rack 2 compatible frameworks
 - [Sinatra](https://github.com/sinatra/sinatra) - [sinatra.ru](apps/sinatra.ru)
 - [Syro](https://github.com/soveran/syro) - [syro](apps/syro.ru)
 
+Please note that while Rails has been added to the list, it is just a
+minimalistic representation with ActionPack gem (using API and Metal, no full middleware stack, etc). You
+shouldn't take the performance numbers mentioned here about Rails (or any
+other) as scientific and decision-taking references.
+
 ## How?
 
 Used [wrk](https://github.com/wg/wrk) to benchmark, locally, a burst of
