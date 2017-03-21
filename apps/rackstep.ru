@@ -1,13 +1,13 @@
-require 'rackstep'
+require "rackstep"
 
-class HelloWorld < RackStep::App
-  add_route('GET', '', 'HelloWorldController')
+class HelloController < RackStep::Controller
+  def process_request
+    response.body = ["Hello World!"]
+  end
 end
 
-class HelloWorldController < RackStep::Controller
-  def process_request
-    response.body = 'Hello World!'
-  end
+class HelloWorld < RackStep::App
+  add_route("GET", "", HelloController)
 end
 
 APP = HelloWorld

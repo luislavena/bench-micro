@@ -1,69 +1,47 @@
-GIT
-  remote: https://github.com/guilleiguaran/nancy.git
-  revision: b3d9e74edee49298a17f360a4567d90c63ad0c55
-  branch: master
-  specs:
-    nancy (0.4.0)
-      rack
-
-GIT
-  remote: https://github.com/luislavena/brooklyn.git
-  revision: 3698aae362d68da77dd23ccf91a68ea022b48381
-  branch: master
-  specs:
-    brooklyn (0.0.1)
-      rack (>= 1.5.2, < 2.0)
-
-GIT
-  remote: https://github.com/mfdavid/rackstep.git
-  revision: da2f9aa4eed97143113cc23f4528a8ced0bbd205
-  branch: master
-  specs:
-    rackstep (0.0.5)
-
 GEM
   remote: https://rubygems.org/
   specs:
-    actionpack (4.2.5)
-      actionview (= 4.2.5)
-      activesupport (= 4.2.5)
-      rack (~> 1.6)
-      rack-test (~> 0.6.2)
-      rails-dom-testing (~> 1.0, >= 1.0.5)
+    actionpack (5.0.2)
+      actionview (= 5.0.2)
+      activesupport (= 5.0.2)
+      rack (~> 2.0)
+      rack-test (~> 0.6.3)
+      rails-dom-testing (~> 2.0)
       rails-html-sanitizer (~> 1.0, >= 1.0.2)
-    actionview (4.2.5)
-      activesupport (= 4.2.5)
+    actionview (5.0.2)
+      activesupport (= 5.0.2)
       builder (~> 3.1)
       erubis (~> 2.7.0)
-      rails-dom-testing (~> 1.0, >= 1.0.5)
-      rails-html-sanitizer (~> 1.0, >= 1.0.2)
-    activesupport (4.2.5)
+      rails-dom-testing (~> 2.0)
+      rails-html-sanitizer (~> 1.0, >= 1.0.3)
+    activesupport (5.0.2)
+      concurrent-ruby (~> 1.0, >= 1.0.2)
       i18n (~> 0.7)
-      json (~> 1.7, >= 1.7.7)
       minitest (~> 5.1)
-      thread_safe (~> 0.3, >= 0.3.4)
       tzinfo (~> 1.1)
     allocation_stats (0.1.5)
     axiom-types (0.1.1)
       descendants_tracker (~> 0.0.4)
       ice_nine (~> 0.11.0)
       thread_safe (~> 0.3, >= 0.3.1)
-    blankslate (3.1.3)
-    builder (3.2.2)
+    builder (3.2.3)
     coercible (1.0.0)
       descendants_tracker (~> 0.0.1)
-    cuba (3.4.0)
-      rack
+    concurrent-ruby (1.0.5)
+    cuba (3.8.0)
+      rack (>= 1.6.0)
     descendants_tracker (0.0.4)
       thread_safe (~> 0.3, >= 0.3.1)
-    enumerable-lazy (0.0.1)
+    enumerable-lazy (0.0.2)
     equalizer (0.0.11)
     erubis (2.7.0)
-    gin (1.2.1)
-      rack (~> 1.1)
-      rack-protection (~> 1.0)
-      tilt (~> 1.4)
-    grape (0.16.2)
+    flame (4.11.3.2)
+      gorilla-patch (~> 2, >= 2.0.0)
+      rack (~> 2)
+      thor (~> 0)
+      tilt (>= 2.0, < 3)
+    gorilla-patch (2.1.1)
+    grape (0.17.0)
       activesupport
       builder
       hashie (>= 2.1.0)
@@ -73,88 +51,70 @@ GEM
       rack (>= 1.3.0)
       rack-accept
       virtus (>= 1.0.0)
-    hanami-router (0.6.2)
-      hanami-utils (~> 0.7)
-      http_router (~> 0.11)
-    hanami-utils (0.7.1)
-    hashie (3.4.4)
-    hobbit (0.6.0)
+    hanami-router (1.0.0.beta3)
+      hanami-utils (~> 1.0.0.beta1)
+      http_router (= 0.11.2)
+      rack (~> 2.0)
+    hanami-utils (1.0.0.beta3)
+    hashie (3.5.5)
+    hobbit (0.6.1)
       rack
     http_router (0.11.2)
       rack (>= 1.0.0)
       url_mount (~> 0.2.1)
-    i18n (0.7.0)
+    i18n (0.8.1)
     ice_nine (0.11.2)
-    innate (2015.10.28)
-      rack (~> 1.6.4)
-    json (1.8.3)
     loofah (2.0.3)
       nokogiri (>= 1.5.9)
-    mini_portile2 (2.0.0)
-    minitest (5.8.3)
-    multi_json (1.12.0)
-    multi_xml (0.5.5)
-    mustermann (0.4.0)
-      tool (~> 0.2)
-    mustermann-simple (0.4.0)
-      mustermann (= 0.4.0)
-    mustermann19 (0.4.3)
+    method_source (0.8.2)
+    mini_portile2 (2.1.0)
+    minitest (5.10.1)
+    multi_json (1.12.1)
+    multi_xml (0.6.0)
+    mustermann (1.0.0)
+    mustermann19 (0.4.4)
       enumerable-lazy
-    nokogiri (1.6.7)
-      mini_portile2 (~> 2.0.0.rc2)
-    nyny (2.2.1)
-      rack
-      tilt
-    parslet (1.7.1)
-      blankslate (>= 2.0, <= 4.0)
-    puma (2.15.3)
-    rack (1.6.4)
+    nokogiri (1.7.0.1)
+      mini_portile2 (~> 2.1.0)
+    puma (3.8.2)
+    rack (2.0.1)
     rack-accept (0.4.5)
       rack (>= 0.4)
-    rack-protection (1.5.3)
+    rack-app (6.2.0)
+      rack
+    rack-protection (2.0.0.rc2)
       rack
     rack-test (0.6.3)
       rack (>= 1.0)
-    rails-deprecated_sanitizer (1.0.3)
-      activesupport (>= 4.2.0.alpha)
-    rails-dom-testing (1.0.7)
-      activesupport (>= 4.2.0.beta, < 5.0)
-      nokogiri (~> 1.6.0)
-      rails-deprecated_sanitizer (>= 1.0.1)
-    rails-html-sanitizer (1.0.2)
+    rackstep (0.0.9)
+    rails-dom-testing (2.0.2)
+      activesupport (>= 4.2.0, < 6.0)
+      nokogiri (~> 1.6)
+    rails-html-sanitizer (1.0.3)
       loofah (~> 2.0)
-    railties (4.2.5)
-      actionpack (= 4.2.5)
-      activesupport (= 4.2.5)
+    railties (5.0.2)
+      actionpack (= 5.0.2)
+      activesupport (= 5.0.2)
+      method_source
       rake (>= 0.8.7)
       thor (>= 0.18.1, < 2.0)
-    rake (10.4.2)
-    ramaze (2012.12.08)
-      innate (>= 2012.12)
-      rake
+    rake (12.0.0)
     rambutan (0.0.1)
       http_router
-    roda (2.8.0)
+    roda (2.24.0)
       rack
-    scorched (0.24)
-      rack (~> 1.4)
-      rack-accept (~> 0.4)
-      scorched-accept (~> 0.1)
-      tilt (~> 1.4)
-    scorched-accept (0.1)
-      parslet (~> 1.7)
-    seg (0.0.1)
-    sinatra (1.4.6)
-      rack (~> 1.4)
-      rack-protection (~> 1.4)
-      tilt (>= 1.3, < 3)
-    syro (2.0.0)
-      rack (~> 1.6.0)
+    seg (1.2.0)
+    sinatra (2.0.0.rc2)
+      mustermann (= 1.0.0)
+      rack (~> 2.0)
+      rack-protection (= 2.0.0.rc2)
+      tilt (~> 2.0)
+    syro (3.0.1)
+      rack (>= 1.6.0)
       seg
-    thor (0.19.1)
-    thread_safe (0.3.5)
-    tilt (1.4.1)
-    tool (0.2.3)
+    thor (0.19.4)
+    thread_safe (0.3.6)
+    tilt (2.0.7)
     tzinfo (1.2.2)
       thread_safe (~> 0.1)
     url_mount (0.2.1)
@@ -169,27 +129,25 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  actionpack (~> 4.2)
+  actionpack
   allocation_stats
-  brooklyn!
   cuba
-  gin
+  flame
   grape
-  hanami-router
+  hanami-router (>= 1.0.0.beta3)
   hobbit
-  mustermann-simple
-  nancy!
-  nyny
-  puma (~> 2.15)
-  rackstep!
-  railties (~> 4.2)
-  ramaze
+  puma
+  rack
+  rack-app
+  rackstep
+  railties
   rambutan
   roda
-  scorched
-  sinatra
+  sinatra (>= 2.0.0.rc2)
   syro
-  tzinfo
+
+RUBY VERSION
+   ruby 2.4.0p0
 
 BUNDLED WITH
-   1.11.2
+   1.13.7

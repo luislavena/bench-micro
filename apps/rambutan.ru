@@ -7,7 +7,7 @@ class HelloController < Rambutan::Base
 end
 
 app = Rambutan::RoutesSet.new do
-  get '/' => 'hello#world'
+  get "/" => "hello#world"
 end
 
 APP = app.router
