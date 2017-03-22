@@ -19,6 +19,7 @@ gem "rambutan"
 gem "roda"
 gem "sinatra", ">= 2.0.0.rc2"
 gem "syro"
+gem "watts"
 
 gem "actionpack"
 gem "railties"
