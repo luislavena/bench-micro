@@ -1,14 +1,9 @@
-#!/usr/bin/env ruby
-
 require_relative "support/allocation_benchmarker"
 require_relative "support/allocation_summary_table"
 
 results = Dir['apps/*.ru'].sort.map do |file|
   tracker = AllocationsBenchmarker.new(file)
   tracker.human_output
-  Object.send(:remove_const, :APP)
-  Object.send(:remove_const, :HelloWorld) if Object.constants.include?(:HelloWorld)
-  Object.send(:remove_const, :HelloController) if Object.constants.include?(:HelloController)
   tracker.machine_result
 end
 

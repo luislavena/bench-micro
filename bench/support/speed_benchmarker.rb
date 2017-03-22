@@ -1,4 +1,4 @@
-class Benchmarker
+class SpeedBenchmarker
   attr_reader :config
 
   def initialize(config)
@@ -41,9 +41,8 @@ class Benchmarker
   end
 
   def start_wrk
-    execute wrk_command
+    execute(wrk_command)
   end
-
 
   def start_command
     "puma --environment production --threads 16:16 #{config}"

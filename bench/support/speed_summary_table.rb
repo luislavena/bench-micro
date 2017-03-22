@@ -1,4 +1,5 @@
 require_relative 'table_helpers'
+
 class SpeedSummaryTable
   include TableHelpers
   attr_accessor :content # content: output from wrk, stripped a bit

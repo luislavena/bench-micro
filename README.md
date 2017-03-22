@@ -16,29 +16,24 @@ nor to do a silly *fibonacci-as-a-service*, ok?
 
 ## What?
 
-The following microframeworks were considered when doing this research:
+Rack 2 compatible frameworks
 
-- [Brooklyn](https://github.com/luislavena/brooklyn) - [brooklyn.ru](apps/brooklyn.ru)
 - [Cuba](https://github.com/soveran/cuba) - [cuba.ru](apps/cuba.ru)
-- [Gin](https://github.com/jcasts/gin) - [gin.ru](apps/gin.ru)
+- [Flame](https://github.com/AlexWayfer/flame) - [flame.ru](apps/flame.ru)
 - [Grape](https://github.com/ruby-grape/grape) - [grape.ru](apps/grape.ru)
 - [Hanami (Router)](https://github.com/hanami/router) - [hanami-router.ru](apps/hanami-router.ru)
 - [Hobbit](https://github.com/patriciomacadden/hobbit) - [hobbit.ru](apps/hobbit.ru)
-- [Nancy](https://github.com/heapsource/nancy) - [nancy.ru](apps/nancy.ru)
-- [NYNY](https://github.com/alisnic/nyny) - [nyny.ru](apps/nyny.ru)
-- [Mustermann](https://github.com/rkh/mustermann) - [mustermann.ru](apps/mustermann.ru)
 - [Rack](https://github.com/rack/rack) - [rack.ru](apps/rack.ru) + [rack-response.ru](apps/rack-response.ru)
+- [Rack-App](https://github.com/rack-app/rack-app) - [rack-app.ru](apps/rack-app.ru)
 - [RackStep](https://github.com/mfdavid/rackstep) - [rackstep.ru](apps/rackstep.ru)
-- ~~[Rails](https://github.com/rails/rails) - [rails.ru](apps/rails.ru)~~
-- [Ramaze](https://github.com/Ramaze/ramaze) - [ramaze.ru](apps/ramaze.ru)
+- [Rails (API + Metal)](https://github.com/rails/rails) - [rails-api.ru](apps/rails-api.ru)  + [rails-metal.ru](apps/rails-metal.ru)
 - [Rambutan](https://github.com/NewRosies/rambutan) - [rambutan.ru](apps/rambutan.ru)
 - [Roda](https://github.com/jeremyevans/roda) - [roda.ru](apps/roda.ru)
-- [Scorched](https://github.com/Wardrop/Scorched) - [scorched.ru](apps/scorched.ru)
 - [Sinatra](https://github.com/sinatra/sinatra) - [sinatra.ru](apps/sinatra.ru)
 - [Syro](https://github.com/soveran/syro) - [syro](apps/syro.ru)
 
 Please note that while Rails has been added to the list, it is just a
-minimalistic representation (using Metal, no full middleware stack, etc). You
+minimalistic representation with ActionPack gem (using API and Metal, no full middleware stack, etc). You
 shouldn't take the performance numbers mentioned here about Rails (or any
 other) as scientific and decision-taking references.
 
@@ -51,8 +46,8 @@ requests (in 2 threads) over 10 seconds. The command line used was:
 $ wrk -t 2 http://localhost:9292/
 ```
 
-All the frameworks were run using [Puma](https://github.com/puma/puma) on
-Ruby 2.1, in production mode and using 16 threads:
+All the frameworks using [Puma](https://github.com/puma/puma) on
+Ruby 2.4, in production mode with 16 threads:
 
 ```console
 $ puma -e production -t 16:16 apps/<framework.ru>

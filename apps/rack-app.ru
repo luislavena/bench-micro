@@ -1,6 +1,7 @@
-require "scorched"
+require "rack/app"
 
-class HelloWorld < Scorched::Controller
+class HelloWorld < Rack::App
+  desc "Hello World"
   get "/" do
     "Hello World!"
   end
