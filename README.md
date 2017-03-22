@@ -31,6 +31,7 @@ Rack 2 compatible frameworks
 - [Roda](https://github.com/jeremyevans/roda) - [roda.ru](apps/roda.ru)
 - [Sinatra](https://github.com/sinatra/sinatra) - [sinatra.ru](apps/sinatra.ru)
 - [Syro](https://github.com/soveran/syro) - [syro](apps/syro.ru)
+- [Watts](https://github.com/pete/watts) - [watts](apps/watts.ru)
 
 Please note that while Rails has been added to the list, it is just a
 minimalistic representation with ActionPack gem (using API and Metal, no full middleware stack, etc). You
