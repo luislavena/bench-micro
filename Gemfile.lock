@@ -74,6 +74,9 @@ GEM
     mustermann (1.0.0)
     mustermann19 (0.4.4)
       enumerable-lazy
+    newark (0.0.8)
+      activesupport
+      rack (>= 1.5.2)
     nokogiri (1.7.0.1)
       mini_portile2 (~> 2.1.0)
     puma (3.8.2)
@@ -136,6 +139,7 @@ DEPENDENCIES
   grape
   hanami-router (>= 1.0.0.beta3)
   hobbit
+  newark
   puma
   rack
   rack-app
