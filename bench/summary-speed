@@ -1,5 +1,3 @@
-#!/usr/bin/env ruby
-
 require_relative "support/speed_benchmarker"
 require_relative "support/speed_summary_table"
 
@@ -18,7 +16,7 @@ warn "please wait... the output will come, when finished"
 redirect_stream(STDOUT, 'test.log') do
   apps.each do |config_file|
     warn config_file
-    Benchmarker.new(config_file).run
+    SpeedBenchmarker.new(config_file).run
   end
 end
 

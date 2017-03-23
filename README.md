@@ -16,29 +16,25 @@ nor to do a silly *fibonacci-as-a-service*, ok?
 
 ## What?
 
-The following microframeworks were considered when doing this research:
+Rack 2 compatible frameworks
 
-- [Brooklyn](https://github.com/luislavena/brooklyn) - [brooklyn.ru](apps/brooklyn.ru)
 - [Cuba](https://github.com/soveran/cuba) - [cuba.ru](apps/cuba.ru)
-- [Gin](https://github.com/jcasts/gin) - [gin.ru](apps/gin.ru)
+- [Flame](https://github.com/AlexWayfer/flame) - [flame.ru](apps/flame.ru)
 - [Grape](https://github.com/ruby-grape/grape) - [grape.ru](apps/grape.ru)
 - [Hanami (Router)](https://github.com/hanami/router) - [hanami-router.ru](apps/hanami-router.ru)
 - [Hobbit](https://github.com/patriciomacadden/hobbit) - [hobbit.ru](apps/hobbit.ru)
-- [Nancy](https://github.com/heapsource/nancy) - [nancy.ru](apps/nancy.ru)
-- [NYNY](https://github.com/alisnic/nyny) - [nyny.ru](apps/nyny.ru)
-- [Mustermann](https://github.com/rkh/mustermann) - [mustermann.ru](apps/mustermann.ru)
 - [Rack](https://github.com/rack/rack) - [rack.ru](apps/rack.ru) + [rack-response.ru](apps/rack-response.ru)
+- [Rack-App](https://github.com/rack-app/rack-app) - [rack-app.ru](apps/rack-app.ru)
 - [RackStep](https://github.com/mfdavid/rackstep) - [rackstep.ru](apps/rackstep.ru)
-- ~~[Rails](https://github.com/rails/rails) - [rails.ru](apps/rails.ru)~~
-- [Ramaze](https://github.com/Ramaze/ramaze) - [ramaze.ru](apps/ramaze.ru)
+- [Rails (API + Metal)](https://github.com/rails/rails) - [rails-api.ru](apps/rails-api.ru)  + [rails-metal.ru](apps/rails-metal.ru)
 - [Rambutan](https://github.com/NewRosies/rambutan) - [rambutan.ru](apps/rambutan.ru)
 - [Roda](https://github.com/jeremyevans/roda) - [roda.ru](apps/roda.ru)
-- [Scorched](https://github.com/Wardrop/Scorched) - [scorched.ru](apps/scorched.ru)
 - [Sinatra](https://github.com/sinatra/sinatra) - [sinatra.ru](apps/sinatra.ru)
 - [Syro](https://github.com/soveran/syro) - [syro](apps/syro.ru)
+- [Watts](https://github.com/pete/watts) - [watts](apps/watts.ru)
 
 Please note that while Rails has been added to the list, it is just a
-minimalistic representation (using Metal, no full middleware stack, etc). You
+minimalistic representation with ActionPack gem (using API and Metal, no full middleware stack, etc). You
 shouldn't take the performance numbers mentioned here about Rails (or any
 other) as scientific and decision-taking references.
 
@@ -51,8 +47,8 @@ requests (in 2 threads) over 10 seconds. The command line used was:
 $ wrk -t 2 http://localhost:9292/
 ```
 
-All the frameworks were run using [Puma](https://github.com/puma/puma) on
-Ruby 2.1, in production mode and using 16 threads:
+All the frameworks using [Puma](https://github.com/puma/puma) on
+Ruby 2.4, in production mode with 16 threads:
 
 ```console
 $ puma -e production -t 16:16 apps/<framework.ru>
@@ -75,24 +71,23 @@ Yup, I do:
 ```
 Framework            Requests/sec  % from best
 ----------------------------------------------
-rack                     18544.85       100.0%
-syro                     15454.22       83.33%
-mustermann               15199.80       81.96%
-roda                     15042.26       81.11%
-cuba                     13948.11       75.21%
-hobbit                   13898.69       74.95%
-rack-response            13822.22       74.53%
-rambutan                 10804.74       58.26%
-brooklyn                  9938.15       53.59%
-hanami-router             9469.52       51.06%
-rackstep                  9089.18       49.01%
-nancy                     8808.90        47.5%
-nyny                      7720.06       41.63%
-rails                     5810.33       31.33%
-gin                       5549.02       29.92%
-sinatra                   4441.61       23.95%
-grape                     3345.01       18.04%
-ramaze                    1936.36       10.44%
+rack                     19860.11      100.00%
+syro                     12880.79       64.86%
+watts                    12838.11       64.64%
+roda                     12805.01       64.48%
+cuba                     12676.64       63.83%
+hanami-router            12313.15       62.00%
+hobbit                   12112.75       60.99%
+rack-response            10395.30       52.34%
+newark                    8991.21       45.27%
+rackstep                  8531.32       42.96%
+rambutan                  8281.52       41.70%
+rack-app                  7466.27       37.59%
+flame                     6463.42       32.54%
+rails-metal               6219.34       31.32%
+sinatra                   3832.45       19.30%
+grape                     3458.29       17.41%
+rails-api                 1185.43        5.97%
 ```
 <!-- speed_table_end -->
 
@@ -101,33 +96,33 @@ ramaze                    1936.36       10.44%
 ```
 Framework       Allocs/Req Memsize/Req
 --------------------------------------
-rack                    38        3256
-syro                    43        3536
-hobbit                  45        3808
-roda                    45        3752
-mustermann              51        4112
-cuba                    53        4072
-rack-response           56        5312
-brooklyn                69        6412
-nancy                   75        7644
-nyny                    82        8396
-rackstep                82        6008
-rambutan                85        6848
-hanami-router           90        7859
-rails                  113       10311
-gin                    198       17219
-sinatra                212       15783
-grape                  257       20236
-ramaze                 464       41360
+rack                    34        2640
+roda                    38        3328
+syro                    38        3328
+cuba                    40        3408
+watts                   41        2920
+hobbit                  42        3648
+rack-response           49        3856
+rails-metal             53        5448
+hanami-router           61        4600
+newark                  65        5648
+rackstep                74        4664
+rack-app                76        6904
+rambutan                76        5664
+flame                   94        7077
+sinatra                181       11992
+grape                  237       17168
+rails-api              375       27440
 ```
 <!-- mem_table_end -->
 
+#### Hardware
 
 These numbers were collected on:
 
-- Ubuntu 15.10 64-bit (kernel: 4.2.0-35-generic)
+- Ubuntu 16.10 64-bit (kernel: 4.8.0-41-generic)
 - Dell XPS 13 (9343, QHD, Developer Edition)
 - Intel® Core™ i7-5500U CPU @ 2.40GHz × 4
 - 8GB RAM
 - 256GB SSD
-- ruby 2.2.4p230 (2015-12-16 revision 53155) [x86_64-linux]
+- ruby 2.4.0p0 (2016-12-24 revision 57164) [x86_64-linux]

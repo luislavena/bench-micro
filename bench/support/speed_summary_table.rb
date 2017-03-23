@@ -1,4 +1,5 @@
 require_relative 'table_helpers'
+
 class SpeedSummaryTable
   include TableHelpers
   attr_accessor :content # content: output from wrk, stripped a bit
@@ -43,8 +44,8 @@ class SpeedSummaryTable
       name  = pair[0]
       rps   = pair[1]
       num   = (pair[1].to_f/max_rps)
-      round = ((num * 10000).round*1.0 ) / 100
-      table_row(name, rps, round.to_s + "%")
+      round = "%2.02f%%" % (num * 100)
+      table_row(name, rps, round)
     end.join("\n")
   end
 end

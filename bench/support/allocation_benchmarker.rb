@@ -8,8 +8,18 @@ require 'allocation_stats'
 
 class AllocationsBenchmarker
   attr_accessor :config
+
   def initialize(config)
     @config = config
+
+    load_script
+  end
+
+  def load_script
+    Object.send(:remove_const, :APP) if Object.constants.include?(:APP)
+    Object.send(:remove_const, :HelloWorld) if Object.constants.include?(:HelloWorld)
+    Object.send(:remove_const, :HelloController) if Object.constants.include?(:HelloController)
+
     load "./#{config}"
   end
 
@@ -56,11 +66,7 @@ class AllocationsBenchmarker
 
   def stats
     @stats ||= AllocationStats.new(burn: 5).trace do
-      app.call(request)
+      APP.call(request)
     end
-  end
-
-  def app
-    APP
   end
 end
