@@ -1,9 +1,9 @@
-require 'newark'
+require "newark"
 
 class HelloWorld
   include Newark
 
-  get '/' do
+  get "/" do
     "Hello World!"
   end
 end

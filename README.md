@@ -23,6 +23,7 @@ Rack 2 compatible frameworks
 - [Grape](https://github.com/ruby-grape/grape) - [grape.ru](apps/grape.ru)
 - [Hanami (Router)](https://github.com/hanami/router) - [hanami-router.ru](apps/hanami-router.ru)
 - [Hobbit](https://github.com/patriciomacadden/hobbit) - [hobbit.ru](apps/hobbit.ru)
+- [Newark](https://github.com/mje113/newark) - [newark.ru](apps/newark.ru)
 - [Rack](https://github.com/rack/rack) - [rack.ru](apps/rack.ru) + [rack-response.ru](apps/rack-response.ru)
 - [Rack-App](https://github.com/rack-app/rack-app) - [rack-app.ru](apps/rack-app.ru)
 - [RackStep](https://github.com/mfdavid/rackstep) - [rackstep.ru](apps/rackstep.ru)
