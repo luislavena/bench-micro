@@ -1,11 +1,11 @@
-require 'watts'
+require "watts"
 
-class HelloWorldApp < Watts::App
-  class HelloWorld < Watts::Resource
-    get { 'Hello, World!' }
+class HelloWorld < Watts::App
+  class HelloController < Watts::Resource
+    get { "Hello, World!" }
   end
-  resource('/', HelloWorld)
+  resource("/", HelloController)
 end
 
-APP = HelloWorldApp.new
+APP = HelloWorld.new
 run APP
