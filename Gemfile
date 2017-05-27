@@ -7,12 +7,12 @@ gem "puma"
 
 # frameworks
 gem "cuba"
-gem "plezi"
 gem "flame"
 gem "grape"
 gem "hanami-router"
 gem "hobbit"
 gem "newark"
+gem "plezi"
 gem "rack"
 gem "rack-app"
 gem "rackstep"
