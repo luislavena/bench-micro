@@ -59,6 +59,8 @@ GEM
     hashie (3.5.5)
     hobbit (0.6.1)
       rack
+    hobby (0.0.7)
+      rack
     http_router (0.11.2)
       rack (>= 1.0.0)
       url_mount (~> 0.2.1)
@@ -140,6 +142,7 @@ DEPENDENCIES
   grape
   hanami-router (>= 1.0.0.beta3)
   hobbit
+  hobby
   newark
   puma
   rack
@@ -156,4 +159,4 @@ RUBY VERSION
    ruby 2.4.0p0
 
 BUNDLED WITH
-   1.14.6
+   1.15.0
