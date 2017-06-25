@@ -74,25 +74,24 @@ Yup, I do:
 ```
 Framework            Requests/sec  % from best
 ----------------------------------------------
-rack                     16394.04      100.00%
-syro                     14104.07       86.03%
-roda                     13672.91       83.40%
-watts                    13154.65       80.24%
-cuba                     12853.89       78.41%
-hanami-router            11818.75       72.09%
-hobbit                   11765.55       71.77%
-rack-response            11286.92       68.85%
-hobby                    10660.60       65.03%
-newark                    9544.29       58.22%
-rambutan                  9423.55       57.48%
-plezi                     9037.18       55.12%
-rackstep                  8626.65       52.62%
-rack-app                  7983.50       48.70%
-rails-metal               6864.73       41.87%
-flame                     6525.55       39.80%
-sinatra                   4203.74       25.64%
-grape                     3345.60       20.41%
-rails-api                 1210.31        7.38%
+rack                     16339.26      100.00%
+watts                    15259.49       93.39%
+syro                     13803.82       84.48%
+roda                     12268.70       75.09%
+hanami-router            11818.36       72.33%
+cuba                     11451.53       70.09%
+hobbit                   11337.03       69.39%
+rack-response            11273.67       69.00%
+hobby                    10152.60       62.14%
+newark                    9596.83       58.73%
+plezi                     9219.48       56.43%
+rambutan                  9108.58       55.75%
+rackstep                  8124.54       49.72%
+rack-app                  7693.54       47.09%
+rails-metal               6750.78       41.32%
+sinatra                   4123.50       25.24%
+grape                     3348.19       20.49%
+rails-api                 1222.69        7.48%
 ```
 <!-- speed_table_end -->
 
@@ -101,25 +100,24 @@ rails-api                 1210.31        7.38%
 ```
 Framework       Allocs/Req Memsize/Req
 --------------------------------------
-rack                    34        2640
-roda                    38        3328
-syro                    38        3328
-cuba                    40        3408
-watts                   41        2920
-hobbit                  42        3648
-hobby                   46        3960
-rack-response           49        3856
-rails-metal             53        5448
-plezi                   58        4720
-hanami-router           61        4600
-newark                  65        5648
-rackstep                74        4664
-rack-app                76        6904
-rambutan                76        5664
-flame                   94        7077
-sinatra                177       11736
-grape                  231       16784
-rails-api              371       27441
+rack                    41        2920
+roda                    45        3608
+syro                    45        3608
+cuba                    47        3688
+watts                   48        3200
+hobbit                  49        3928
+hobby                   54        4320
+rack-response           56        4136
+rails-metal             60        5728
+plezi                   66        5040
+hanami-router           68        4880
+newark                  72        5928
+rackstep                81        4944
+rack-app                83        7184
+rambutan                83        5944
+sinatra                191       12512
+grape                  258       18888
+rails-api              378       27737
 ```
 <!-- mem_table_end -->
 
