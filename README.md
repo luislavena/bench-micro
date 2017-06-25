@@ -125,9 +125,9 @@ rails-api              378       27737
 
 These numbers were collected on:
 
-- Ubuntu 16.10 64-bit (kernel: 4.8.0-41-generic)
+- Ubuntu 16.10 64-bit (kernel: 4.8.0-56-generic)
 - Dell XPS 13 (9343, QHD, Developer Edition)
 - Intel® Core™ i7-5500U CPU @ 2.40GHz × 4
 - 8GB RAM
 - 256GB SSD
-- ruby 2.4.0p0 (2016-12-24 revision 57164) [x86_64-linux]
+- ruby 2.4.1p111 (2017-03-22 revision 58053) [x86_64-linux]
