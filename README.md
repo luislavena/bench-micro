@@ -74,24 +74,25 @@ Yup, I do:
 ```
 Framework            Requests/sec  % from best
 ----------------------------------------------
-rack                     16339.26      100.00%
-watts                    15259.49       93.39%
-syro                     13803.82       84.48%
-roda                     12268.70       75.09%
-hanami-router            11818.36       72.33%
-cuba                     11451.53       70.09%
-hobbit                   11337.03       69.39%
-rack-response            11273.67       69.00%
-hobby                    10152.60       62.14%
-newark                    9596.83       58.73%
-plezi                     9219.48       56.43%
-rambutan                  9108.58       55.75%
-rackstep                  8124.54       49.72%
-rack-app                  7693.54       47.09%
-rails-metal               6750.78       41.32%
-sinatra                   4123.50       25.24%
-grape                     3348.19       20.49%
-rails-api                 1222.69        7.48%
+rack                     15839.64      100.00%
+watts                    13585.65       85.77%
+syro                     13306.01       84.00%
+roda                     11776.27       74.35%
+cuba                     11501.96       72.62%
+rack-response            11480.11       72.48%
+hobbit                   11140.22       70.33%
+hobby                    10606.80       66.96%
+hanami-router            10247.61       64.70%
+newark                    8896.35       56.17%
+rambutan                  8466.83       53.45%
+plezi                     8240.07       52.02%
+rackstep                  8187.32       51.69%
+rack-app                  7473.52       47.18%
+rails-metal               6598.65       41.66%
+flame                     5454.46       34.44%
+sinatra                   3977.30       25.11%
+grape                     2937.03       18.54%
+rails-api                 1211.33        7.65%
 ```
 <!-- speed_table_end -->
 
@@ -106,7 +107,7 @@ syro                    45        3608
 cuba                    47        3688
 watts                   48        3200
 hobbit                  49        3928
-hobby                   54        4320
+hobby                   53        4240
 rack-response           56        4136
 rails-metal             60        5728
 plezi                   66        5040
@@ -115,9 +116,10 @@ newark                  72        5928
 rackstep                81        4944
 rack-app                83        7184
 rambutan                83        5944
+flame                  125        8536
 sinatra                191       12512
-grape                  258       18888
-rails-api              378       27737
+grape                  272       20800
+rails-api              385       28017
 ```
 <!-- mem_table_end -->
 
