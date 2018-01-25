@@ -21,6 +21,7 @@ gem "rambutan"
 gem "roda"
 gem "sinatra"
 gem "syro"
+gem "utopia"
 gem "watts"
 
 gem "actionpack"
