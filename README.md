@@ -28,6 +28,7 @@ Rack 2 compatible frameworks
 - [Plezi](https://github.com/boazsegev/plezi) - [plezi.ru](apps/plezi.ru)
 - [Rack](https://github.com/rack/rack) - [rack.ru](apps/rack.ru) + [rack-response.ru](apps/rack-response.ru)
 - [Rack-App](https://github.com/rack-app/rack-app) - [rack-app.ru](apps/rack-app.ru)
+- [Rack-Routing](https://github.com/georgeu2000/rack-routing) - [rack-routing.ru](apps/rack-routing.ru)
 - [RackStep](https://github.com/mfdavid/rackstep) - [rackstep.ru](apps/rackstep.ru)
 - [Rails (API + Metal)](https://github.com/rails/rails) - [rails-api.ru](apps/rails-api.ru)  + [rails-metal.ru](apps/rails-metal.ru)
 - [Rambutan](https://github.com/NewRosies/rambutan) - [rambutan.ru](apps/rambutan.ru)

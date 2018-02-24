@@ -89,6 +89,7 @@ GEM
       rack
     rack-protection (2.0.0)
       rack
+    rack-routing (0.0.10)
     rack-test (0.6.3)
       rack (>= 1.0)
     rackstep (0.0.9)
@@ -150,6 +151,7 @@ DEPENDENCIES
   puma
   rack
   rack-app
+  rack-routing
   rackstep
   railties
   rambutan
