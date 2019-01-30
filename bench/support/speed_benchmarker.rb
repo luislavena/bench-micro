@@ -1,3 +1,6 @@
+require 'puma'
+require 'pty'
+
 class SpeedBenchmarker
   attr_reader :config
 
@@ -52,7 +55,6 @@ class SpeedBenchmarker
     "wrk --threads 2 --duration 10 http://localhost:9292/"
   end
 
-  require 'pty'
   def execute(cmd)
     puts cmd
     begin
