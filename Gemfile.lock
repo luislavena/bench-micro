@@ -81,7 +81,7 @@ GEM
       bundler (~> 1.14)
       iodine (~> 0.4)
       rack (>= 2.0.0)
-    puma (3.10.0)
+    puma (3.12.3)
     rack (2.0.3)
     rack-accept (0.4.5)
       rack (>= 0.4)
