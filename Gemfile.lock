@@ -63,8 +63,7 @@ GEM
       url_mount (~> 0.2.1)
     i18n (0.8.6)
     ice_nine (0.11.2)
-    iodine (0.4.8)
-      rack
+    iodine (0.7.38)
     loofah (2.4.0)
       crass (~> 1.0.2)
       nokogiri (>= 1.5.9)
