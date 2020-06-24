@@ -85,7 +85,7 @@ GEM
       iodine (~> 0.4)
       rack (>= 2.0.0)
     puma (3.12.6)
-    rack (2.0.8)
+    rack (2.1.4)
     rack-accept (0.4.5)
       rack (>= 0.4)
     rack-app (7.3.2)
